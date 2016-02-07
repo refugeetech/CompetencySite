@@ -6,6 +6,6 @@
 @import "styles/sizes.css";
 
 .content {
-  margin: 50px auto;
+  margin: 100px auto;
   max-width: 760px;
 }

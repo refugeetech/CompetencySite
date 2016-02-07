@@ -10,11 +10,13 @@ export default class Content extends Component {
       background,
       children,
       flex,
+      narrow,
       right
     } = this.props;
 
     const styleNames = classNames('content', {
-      right: right
+      right: right,
+      narrow: narrow
     });
 
     return (

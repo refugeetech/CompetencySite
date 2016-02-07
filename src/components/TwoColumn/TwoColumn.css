@@ -12,3 +12,19 @@
     display: block;
   }
 }
+
+.iphone {
+  height: 500px;
+  position: absolute;
+  right: -130px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  @media (--bp-med) {
+    position: relative;
+    right: 0;
+    transform: translateY(0);
+    top: 0;
+  }
+}

@@ -7,6 +7,15 @@
 
 .content {
   padding: 150px;
+  position: relative;
+
+  @media (--bp-med) {
+    padding: 20px;
+  }
+}
+
+.narrow {
+  padding: 150px 60px 150px 120px;
 
   @media (--bp-med) {
     padding: 20px;
