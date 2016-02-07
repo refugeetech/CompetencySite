@@ -11,10 +11,11 @@ export default class TwoColumn extends Component {
     return (
       <div styleName="two-column">
         <Content backgroundColor="#baccf5" flex="2" right>
-          <h1>Vill du hitta ett jobb i Sverige?</h1>
-          <h2>Vi hjälper till att synliggöra jobb och kompetens.</h2>
-          <p>Dela dina kontaktuppgifter och din kompetens i vår app. Vi sprider sen informationen till myndigheter och lokala företag som har behov av arbetskraft. Vårt mål är att uppmärksamma myndigheter på kompetens som inte används.</p>
+          <h1>Are you looking for a job in Sweden?</h1>
+          <h2>We are gathering available competencies within asylum seekers in Sweden.</h2>
+          <p>Help us by sharing your previous work experience and knowledge. We will share the aggregated statistics to local companies in your area and to the authorities. Our goal is to make the job seeking process as short as possible by matching supply and demand more efficiently.</p>
           <img src="/static/images/iphone.png" styleName="iphone" />
+          <iframe src="http://app.competency.se" styleName="app"></iframe>
         </Content>
         <Content
           backgroundImage="url(/static/images/listbg.jpg)"
@@ -23,13 +24,21 @@ export default class TwoColumn extends Component {
           <List
             items={[
               {
-                title: 'Erfarenhet',
-                content: 'Du fyller i arbetslivserfarenhet.'
+                title: 'Competency',
+                content: 'Start by sharing your competency right now.'
               },
               {
-                title: 'Statistik',
-                content: 'All data samlas in och redovisas på competency.se'
-              }
+                title: 'Statistics',
+                content: 'All data are gathered and summarized here at competency.se'
+              },
+              {
+                title: 'Matching',
+                content: 'Our partners help to match your competency with local companies that might have a internship when they learn about you.'
+              },
+              {
+                title: 'Spread the word',
+                content: 'We need a lot of help to get all asylum seekers to register their information here! Spread this url: competency.se'
+              },
             ]}/>
         </Content>
       </div>

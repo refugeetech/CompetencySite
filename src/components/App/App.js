@@ -14,12 +14,12 @@ export default class App extends Component {
       <div className="container">
         <Header />
         <TwoColumn />
-        <Message message="Här nedan ser du statistik på vilka kompetenser som finns i appen, gentemot vilka jobb som finns lediga idag." />
+        <Message message="Below you find statistics on all registered competencies compared to the corresponding available jobs in Arbetsförmedlingen." />
         <ImageVenn
           available="1376"
           image="url(/static/images/economy.jpg)"
           matched="432"
-          title="ADMINISTRATION & EKONOMI" />
+          title="ADMINISTRATION JOBS (NOT LIVE YET)" />
         <Treemap
           colors={[
             "#caa4b8",
@@ -31,23 +31,22 @@ export default class App extends Component {
           ]}
           data={[
             {label: "Receptionist", value: 234},
-            {label: "Skadereglerare", value: 17},
-            {label: "Revisor", value: 73},
-            {label: "Övrigt", value: 3},
-            {label: "Redovisning", value: 354},
-            {label: "Logistiker", value: 13},
-            {label: "Statistiker", value: 234},
-            {label: "VD", value: 37},
+            {label: "Insurance", value: 17},
+            {label: "Accountant", value: 73},
+            {label: "Other", value: 3},
+            {label: "Accountant", value: 354},
+            {label: "Logistics", value: 13},
+            {label: "Statistics", value: 234},
+            {label: "CEO", value: 37},
             {label: "Controller", value: 124},
-            {label: "Advokat", value: 45},
+            {label: "Lawyers", value: 45},
             {label: "Copywriter", value: 10}
-          ]}
-          title="Hälsa och sjukvård"/>
+          ]}/>
         <ImageVenn
           available="35476"
           image="url(/static/images/hotel.jpg)"
           matched="1535"
-          title="HOTELL & RESTAURANG" />
+          title="HOTEL AND RESTAURANTS (NOT LIVE YET)" />
         <Treemap
           colors={[
             "#cae000",
@@ -59,20 +58,19 @@ export default class App extends Component {
           ]}
           data={[
             {label: "Barista", value: 234},
-            {label: "Kallskänka", value: 17},
-            {label: "Övrigt", value: 3},
-            {label: "Kock", value: 354},
+            {label: "Cold Buffet", value: 17},
+            {label: "Other", value: 3},
+            {label: "Chef", value: 354},
             {label: "Croupier", value: 13},
             {label: "Bartender", value: 234},
-            {label: "Hotellreceptionist", value: 37},
-            {label: "Husfru", value: 124},
-            {label: "Pizzabagare", value: 45},
-            {label: "Konferensvärd", value: 15},
-            {label: "Kostonom", value: 26},
-            {label: "Köksbiträde", value: 152},
+            {label: "Hotel Receptionist", value: 37},
+            {label: "Head waiter", value: 124},
+            {label: "Pizza Bakers", value: 45},
+            {label: "Converence Host", value: 15},
+            {label: "Dietary Economics", value: 26},
+            {label: "Helpers in Restaurants", value: 152},
             {label: "Receptionist", value: 35}
-          ]}
-          title="Hälsa och sjukvård"/>
+          ]}/>
       </div>
     );
   }
