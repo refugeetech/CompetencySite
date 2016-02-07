@@ -10,4 +10,8 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  .rd3-basic-chart {
+    line-height: 0;
+  }
 }

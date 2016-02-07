@@ -5,6 +5,26 @@ import { Treemap as D3Treemap } from 'react-d3'
 
 @CSSModules(styles)
 export default class Treemap extends Component {
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      width: 600
+    };
+
+    this._handleResize = this._handleResize.bind(this);
+  }
+
+  componentDidMount () {
+    this._handleResize();
+
+    window.addEventListener('resize', this._handleResize);
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('resize', this._handleResize);
+  }
+
   static propTypes = {
     type: PropTypes.string,
     width: PropTypes.number,
@@ -18,11 +38,17 @@ export default class Treemap extends Component {
     title: 'Treemap'
   };
 
+  _handleResize () {
+   this.setState({
+     width: window.innerWidth - 17
+   });
+  }
+
   render () {
     return (
       <D3Treemap
         data={treemapData}
-        width={this.props.width}
+        width={this.state.width}
         height={this.props.height}
         textColor="#fff"
         fontSize="13px"
