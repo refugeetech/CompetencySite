@@ -1,0 +1,17 @@
+/* ==================================================================
+   List
+   ================================================================== */
+
+@import "styles/colors.css";
+@import "styles/sizes.css";
+
+.list {
+  color: var(--color-white);
+  list-style: square;
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

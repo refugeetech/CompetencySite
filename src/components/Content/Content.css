@@ -1,0 +1,14 @@
+/* ==================================================================
+   Content
+   ================================================================== */
+
+@import "styles/colors.css";
+@import "styles/sizes.css";
+
+.content {
+  padding: 150px;
+}
+
+.right {
+  text-align: right;
+}

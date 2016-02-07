@@ -1,0 +1,15 @@
+/* ==================================================================
+   Header
+   ================================================================== */
+
+@import "styles/colors.css";
+@import "styles/sizes.css";
+
+.header {
+  background: var(--color-mine-shaft);
+  color: var(--color-white);
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+}

@@ -8,6 +8,9 @@
   --color-black: rgb(0, 0, 0);                  /* #000000 */
 
   /* Secondary */
+  --color-perano: rgb(186, 204, 245);           /* #baccf5 */
+  --color-mine-shaft: rgb(46, 46, 46);          /* #2e2e2e */
+
   --color-supernova: rgb(255, 204, 0);          /* #ffcc00 */
   --color-gamboge: rgb(221, 156, 19);           /* #dd9c13 */
   --color-bright-sun: rgb(255, 224, 69);        /* #ffe045 */

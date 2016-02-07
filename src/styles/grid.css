@@ -7,12 +7,10 @@
   --gutter-compensation: calc((var(--gutter-width) * .5) * -1);
   --gutter-width: 1rem;
   --name: xs;
-  --outer-margin: 1rem;
+  --outer-margin: 0;
 
   .wrapper {
     box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 1000px;
   }
 
   .container {
