@@ -24,7 +24,10 @@
 }
 
 .content {
+  align-items: center;
   color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 80px;
-  text-align: center;
 }

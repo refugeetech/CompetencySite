@@ -13,7 +13,10 @@ export default class App extends Component {
       <div className="container">
         <Header />
         <TwoColumn />
-        <ImageVenn title="ADMINISTRATION & EKONOMI" />
+        <ImageVenn
+          available="1376"
+          matched="432"
+          title="ADMINISTRATION & EKONOMI" />
         <Treemap
           colors={[
             "#caa4b8",
@@ -24,7 +27,10 @@ export default class App extends Component {
             "#892c5d"
           ]}
           title="Hälsa och sjukvård"/>
-        <ImageVenn title="HOTELL & RESTAURANG" />
+        <ImageVenn
+          available="35476"
+          matched="1535"
+          title="HOTELL & RESTAURANG" />
         <Treemap
           colors={[
             "#cae000",
