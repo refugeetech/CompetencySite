@@ -16,7 +16,7 @@ export class App extends Component {
           name="test"
           placeholder="Herssro" />
         <Button text="Send it!" />
-        <Treemap />
+        <Treemap title="Hälsa och sjukvård"/>
       </div>
     );
   }
