@@ -14,7 +14,7 @@ export default class App extends Component {
       <div className="container">
         <Header />
         <TwoColumn />
-        <Message message="Below you find statistics on all registered competencies compared to the corresponding available jobs in Arbetsförmedlingen." />
+        <Message message="Below you find statistics on all registered competencies compared to the corresponding available jobs in Platsbanken." />
         <ImageVenn
           available="1376"
           image="url(/static/images/economy.jpg)"

@@ -3,6 +3,7 @@ import CSSModules from 'react-css-modules';
 import styles from './TwoColumn.css';
 import Content from '../Content/Content';
 import List from '../List/List';
+import AppPreview from '../AppPreview/AppPreview'
 import { Row, Column } from '../Layout/Layout';
 
 @CSSModules(styles)
@@ -12,10 +13,11 @@ export default class TwoColumn extends Component {
       <div styleName="two-column">
         <Content backgroundColor="#baccf5" flex="2" right>
           <h1>Are you looking for a job in Sweden?</h1>
-          <h2>We are gathering available competencies within asylum seekers in Sweden.</h2>
-          <p>Help us by sharing your previous work experience and knowledge. We will share the aggregated statistics to local companies in your area and to the authorities. Our goal is to make the job seeking process as short as possible by matching supply and demand more efficiently.</p>
+          <h2>We are visualizing available competencies within asylum seekers in Sweden.</h2>
+          <p>Help us by sharing your previous work experience and education levels. We will share the aggregated statistics to local companies in your area and to the authorities. Our goal is to make the job seeking process as short as possible by matching supply and demand more efficiently.</p>
           <img src="/static/images/iphone.png" styleName="iphone" />
-          <iframe src="http://app.competency.se" styleName="app"></iframe>
+          <AppPreview />
+          <a styleName="button" href="http://app.competency.se">Start now</a>
         </Content>
         <Content
           backgroundImage="url(/static/images/listbg.jpg)"
@@ -24,8 +26,8 @@ export default class TwoColumn extends Component {
           <List
             items={[
               {
-                title: 'Competency',
-                content: 'Start by sharing your competency right now.'
+                title: 'About you',
+                content: 'Share your job availability right now.'
               },
               {
                 title: 'Statistics',

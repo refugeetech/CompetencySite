@@ -10,6 +10,7 @@
   font-weight: 300;
   list-style: square;
   padding-left: 40px;
+  margin-top: 100px;
 
   li {
     &:not(:last-child) {

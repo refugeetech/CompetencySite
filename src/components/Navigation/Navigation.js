@@ -8,11 +8,11 @@ export default class Navigation extends Component {
   render () {
     const links = [
       {
-        title: "Registrera dig",
+        title: "Start",
         to: '/'
       },
       {
-        title: 'Om projektet',
+        title: 'About',
         to: 'about'
       }
     ];
