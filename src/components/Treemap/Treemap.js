@@ -8,12 +8,14 @@ export default class CompetencyTreemap extends Component {
   static propTypes = {
     type: PropTypes.string,
     width: PropTypes.number,
-    height: PropTypes.number
+    height: PropTypes.number,
+    title: PropTypes.string
   };
 
   static defaultProps = {
     height: 400,
-    width: 600
+    width: 600,
+    title: 'Treemap'
   };
 
   render () {
@@ -24,7 +26,7 @@ export default class CompetencyTreemap extends Component {
         height={this.props.height}
         textColor="#484848"
         fontSize="10px"
-        title="Treemap"
+        title={this.props.title}
       />
     );
   }
