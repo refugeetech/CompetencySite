@@ -47,7 +47,8 @@ export default class Treemap extends Component {
 
   render () {
     const {
-      colors
+      colors,
+      data
     } = this.props;
 
     let treemapColors;
@@ -61,7 +62,7 @@ export default class Treemap extends Component {
     return (
       <D3Treemap
         colors={treemapColors}
-        data={treemapData}
+        data={data}
         width={this.state.width}
         height={this.props.height}
         textColor="#fff"
@@ -70,14 +71,3 @@ export default class Treemap extends Component {
     );
   }
 }
-
-var treemapData = [
-  {label: "Administration, ekonomi, juridik", value: 5000},
-  {label: "Bygg och anläggning", value: 4000},
-  {label: "Chefer och verksamhetsledare", value: 3500},
-  {label: "Data/IT", value: 2000},
-  {label: "Hantverksyrken", value: 1400},
-  {label: "Hotell, restaurang, storhushåll", value: 800},
-  {label: "Hälso- och sjukvård", value: 130},
-  {label: "Industriell tillverkning", value: 80}
-];

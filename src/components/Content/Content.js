@@ -26,7 +26,9 @@ export default class Content extends Component {
           flex: flex
         }}
         styleName={styleNames}>
-        {children}
+        <div styleName="inner">
+          {children}
+        </div>
       </div>
     );
   }

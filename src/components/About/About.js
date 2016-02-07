@@ -14,9 +14,9 @@ export default class About extends Component {
 
           <h2>Competency bygger på två delar:</h2>
 
-          <p>Plattform för asylsökande där de kan registrera sin kompetens och sina kontaktuppgifter. Tjänsten kommer finnas på flera språk.</p>
+          <p><em>Plattform för asylsökande</em> där de kan registrera sin kompetens och sina kontaktuppgifter. Tjänsten kommer finnas på flera språk.</p>
 
-          <p>Plattform för arbetsgivare där de enkelt kan se inom vilka områden kompetens finns samt enkelt komma i kontakt med respektive arbetssökande. Visualisation av hur många jobb som är lediga i Sverige parallellt med hur många asylsökande som har just den kompetens som eftersöks.</p>
+          <p><em>Plattform för arbetsgivare</em> där de enkelt kan se inom vilka områden kompetens finns samt enkelt komma i kontakt med respektive arbetssökande. Visualisation av hur många jobb som är lediga i Sverige parallellt med hur många asylsökande som har just den kompetens som eftersöks.</p>
 
            <p>Syftet är att skapa transparens så att myndigheter och arbetsgivare kan se möjligheterna och därmed optimera arbetsmarknaden, sänka kostnader, korta integrationstiden och därmed kunna ta emot människor på ett humanare sätt.</p>
         </div>

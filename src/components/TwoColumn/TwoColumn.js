@@ -11,32 +11,24 @@ export default class TwoColumn extends Component {
     return (
       <div styleName="two-column">
         <Content background="#baccf5" flex="2" right>
-          <h1>Personen bakom varje asylsökande</h1>
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h1>Vill du hitta ett jobb i Sverige?</h1>
+          <h2>Vi hjälper till att synliggöra jobb och kompetens.</h2>
+          <p>Dela dina kontaktuppgifter och din kompetens i vår app. Vi sprider sen informationen till myndigheter och lokala företag som har behov av arbetskraft. Vårt mål är att uppmärksamma myndigheter på kompetens som inte används.</p>
           <img src="/static/images/iphone.png" styleName="iphone" />
         </Content>
         <Content
-          background="url(http://eskipaper.com/images/blurry-1.jpg)"
+          background="url(/static/images/listbg.jpg)"
           flex="1"
           narrow>
           <List
             items={[
               {
-                title: 'Lorem ',
-                content: 'ipsum dolor sit amet'
+                title: 'Erfarenhet',
+                content: 'Du fyller i arbetslivserfarenhet.'
               },
               {
-                title: 'Lorem ',
-                content: 'ipsum dolor sit amet'
-              },
-              {
-                title: 'Lorem ',
-                content: 'ipsum dolor sit amet'
-              },
-              {
-                title: 'Lorem ',
-                content: 'ipsum dolor sit amet'
+                title: 'Statistik',
+                content: 'All data samlas in och redovisas på competency.se'
               }
             ]}/>
         </Content>

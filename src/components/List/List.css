@@ -7,6 +7,7 @@
 
 .list {
   color: var(--color-white);
+  font-weight: 300;
   list-style: square;
 
   li {
@@ -14,4 +15,9 @@
       margin-bottom: 10px;
     }
   }
+}
+
+.title {
+  font-weight: 700;
+  margin-right: 10px;
 }

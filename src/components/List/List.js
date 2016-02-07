@@ -10,7 +10,7 @@ export default class List extends Component {
         {this.props.items.map((item, i) => {
           return (
             <li key={i}>
-              <strong>{item.title}</strong>
+              <span styleName="title">{item.title}</span>
               {item.content}
             </li>
           );

@@ -16,7 +16,7 @@
 .iphone {
   height: 500px;
   position: absolute;
-  right: -130px;
+  right: -118px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
