@@ -14,7 +14,7 @@ export default class Treemap extends Component {
 
   static defaultProps = {
     height: 400,
-    width: 600,
+    width: 1280,
     title: 'Treemap'
   };
 
@@ -24,8 +24,8 @@ export default class Treemap extends Component {
         data={treemapData}
         width={this.props.width}
         height={this.props.height}
-        textColor="#484848"
-        fontSize="10px"
+        textColor="#fff"
+        fontSize="13px"
       />
     );
   }

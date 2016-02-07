@@ -8,7 +8,7 @@ export default class ImageVenn extends Component {
     const {
       title
     } = this.props;
-    
+
     return (
       <div style={{ background: 'url("http://lorempixel.com/1920/1080")' }} styleName="image-venn">
         <div styleName="content">

@@ -1,3 +1,13 @@
-.treemap {
+/* ==================================================================
+   Treemap
+   ================================================================== */
 
+@import "styles/colors.css";
+@import "styles/sizes.css";
+
+:global {
+  text {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }

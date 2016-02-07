@@ -16,6 +16,7 @@ export class App extends Component {
         <ImageVenn title="ADMINISTRATION & EKONOMI" />
         <Treemap title="Hälsa och sjukvård"/>
         <ImageVenn title="HOTELL & RESTAURANG" />
+        <Treemap title="Hälsa och sjukvård"/>
       </div>
     );
   }
