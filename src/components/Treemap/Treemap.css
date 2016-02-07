@@ -6,13 +6,18 @@
 @import "styles/sizes.css";
 
 :global {
-  text {
-    font-weight: bold;
+  .rd3-treemap-cell-text {
+    font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
 
   .rd3-basic-chart {
     line-height: 0;
+  }
+
+  .rd3-treemap-cell-text-light {
+    font-weight: 300;
+    letter-spacing: 0.03em;
   }
 }
