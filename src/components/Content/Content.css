@@ -7,6 +7,10 @@
 
 .content {
   padding: 150px;
+
+  @media (--bp-med) {
+    padding: 20px;
+  }
 }
 
 .right {

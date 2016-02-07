@@ -8,4 +8,14 @@
   --spacing-third: calc(var(--spacing) / 3);
 
   --border-width: 2px;
+
+  @custom-media --bp-small (max-width: 24em);
+  @custom-media --bp-small-2 (max-width: 29.75em);
+  @custom-media --bp-small-3 (max-width: 39.8em);
+  @custom-media --bp-med (max-width: 46.8em);
+  @custom-media --bp-med-2 (max-width: 48em);
+  @custom-media --bp-large (max-width: 50em);
+  @custom-media --bp-large-2 (max-width: 54.5em);
+  @custom-media --bp-xl (max-width: 60em);
+  @custom-media --bp-xl-2 (max-width: 67em);
 }

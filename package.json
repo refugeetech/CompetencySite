@@ -78,6 +78,7 @@
     "d3-react": "^1.0.4",
     "formsy-react": "^0.17.0",
     "formsy-react-components": "^0.6.1",
+    "postcss-custom-media": "^5.0.1",
     "react": "^0.14.0",
     "react-css-modules": "^3.6.0",
     "react-d3": "^0.4.0",

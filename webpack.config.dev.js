@@ -25,6 +25,7 @@ module.exports = {
       from: 'src'
     }),
     require('postcss-css-variables'),
+    require('postcss-custom-media'),
     require('postcss-each'),
     require('postcss-for'),
     require('postcss-nested'),

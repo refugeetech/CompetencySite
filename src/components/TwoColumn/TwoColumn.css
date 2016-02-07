@@ -8,4 +8,7 @@
 .two-column {
   display: flex;
 
+  @media (--bp-med) {
+    display: block;
+  }
 }
