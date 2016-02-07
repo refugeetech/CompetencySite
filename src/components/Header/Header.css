@@ -10,10 +10,15 @@
   background: var(--color-mine-shaft);
   color: var(--color-white);
   display: flex;
-  padding: 10px 40px;
+  padding: 30px 40px;
   text-align: center;
   text-transform: uppercase;
   top: 0;
+
+  @media (--bp-med) {
+    flex-direction: column;
+    padding: 20px;
+  }
 }
 
 .logo {

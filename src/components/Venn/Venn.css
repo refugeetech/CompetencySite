@@ -8,6 +8,10 @@
 .venn-wrap {
   margin-top: 60px;
   position: relative;
+
+  @media (--bp-med) {
+    margin-top: 20px;
+  }
 }
 
 .venn {

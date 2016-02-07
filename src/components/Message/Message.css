@@ -11,6 +11,12 @@
   font-size: 30px;
   line-height: 40px;
   padding: 100px 0;
+
+  @media (--bp-med) {
+    font-size: 21px;
+    line-height: 30px;
+    padding: 80px 20px;
+  }
 }
 
 .inner {

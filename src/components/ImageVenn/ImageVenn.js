@@ -16,7 +16,7 @@ export default class ImageVenn extends Component {
     return (
       <div style={{ backgroundImage: image }} styleName="image-venn">
         <div styleName="content">
-          <h1>{title}</h1>
+          <h1 styleName="title">{title}</h1>
           <Venn available={available} matched={matched} />
         </div>
       </div>

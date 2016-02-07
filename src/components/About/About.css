@@ -8,4 +8,9 @@
 .content {
   margin: 100px auto;
   max-width: 770px;
+
+  @media (--bp-med) {
+    margin: 20px auto;
+    padding: 20px;
+  }
 }

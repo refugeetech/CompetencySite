@@ -9,11 +9,16 @@
   color: var(--color-white);
   font-weight: 300;
   list-style: square;
+  padding-left: 40px;
 
   li {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+  }
+
+  @media (--bp-med) {
+    padding-left: 20px;
   }
 }
 

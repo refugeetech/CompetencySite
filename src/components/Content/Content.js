@@ -7,7 +7,8 @@ import classNames from 'classnames';
 export default class Content extends Component {
   render () {
     const {
-      background,
+      backgroundColor,
+      backgroundImage,
       children,
       flex,
       narrow,
@@ -22,7 +23,8 @@ export default class Content extends Component {
     return (
       <div
         style={{
-          background: background,
+          backgroundColor: backgroundColor,
+          backgroundImage: backgroundImage,
           flex: flex
         }}
         styleName={styleNames}>

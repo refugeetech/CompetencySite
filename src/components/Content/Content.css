@@ -6,6 +6,8 @@
 @import "styles/sizes.css";
 
 .content {
+  background-position: center center;
+  background-size: cover;
   padding: 150px;
   position: relative;
 
@@ -29,4 +31,8 @@
 
 .right {
   text-align: right;
+
+  @media (--bp-med) {
+    text-align: left;
+  }
 }
