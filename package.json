@@ -3,30 +3,13 @@
   "version": "1.0.0",
   "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "./node_modules/.bin/rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "start": "node devServer.js",
     "lint": "eslint src",
     "test": "./node_modules/.bin/gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gaearon/react-transform-boilerplate.git"
-  },
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "babel",
-    "react-transform"
-  ],
   "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
   "license": "CC0-1.0",
   "bugs": {
@@ -58,7 +41,6 @@
     "postcss-nested": "^1.0.0",
     "proxyquire": "^1.7.3",
     "react-addons-test-utils": "^0.14.0",
-    "react-tools": "^0.13.3",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.0.1",
@@ -79,6 +61,7 @@
     "formsy-react": "^0.17.0",
     "formsy-react-components": "^0.6.1",
     "history": "^1.17.0",
+    "postcss": "^5.0.14",
     "postcss-custom-media": "^5.0.1",
     "react": "^0.14.0",
     "react-css-modules": "^3.6.0",
