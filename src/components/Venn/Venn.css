@@ -5,12 +5,16 @@
 @import "styles/colors.css";
 @import "styles/sizes.css";
 
+.venn-wrap {
+  margin-top: 60px;
+  position: relative;
+}
+
 .venn {
   background: rgba(255, 255, 255, .9);
   border-radius: 100%;
   box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.6);
   height: 200px;
-  margin-top: 60px;
   position: relative;
   width: 200px;
 }
@@ -51,6 +55,15 @@
   position: absolute;
   left: -140px;
   top: 55px;
+
+  @media (--bp-med) {
+    margin-bottom: 30px;
+    padding-right: 0;
+    position: relative;
+    left: 0;
+    text-align: center;
+    top: 0;
+  }
 }
 
 .matched-title {
@@ -58,4 +71,13 @@
   position: absolute;
   right: -240px;
   top: 110px;
+
+  @media (--bp-med) {
+    margin-top: 30px;
+    padding-left: 0;
+    position: relative;
+    left: 0;
+    text-align: center;
+    top: 0;
+  }
 }
