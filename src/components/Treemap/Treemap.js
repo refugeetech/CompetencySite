@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Treemap.css';
+import d3 from 'd3';
 import { Treemap as D3Treemap } from 'react-d3'
 
 @CSSModules(styles)
@@ -45,8 +46,21 @@ export default class Treemap extends Component {
   }
 
   render () {
+    const {
+      colors
+    } = this.props;
+
+    let treemapColors;
+
+    if (colors) {
+      treemapColors = d3.scale.ordinal()
+        .domain([0,1,2,3,4,5])
+        .range(colors)
+    }
+
     return (
       <D3Treemap
+        colors={treemapColors}
         data={treemapData}
         width={this.state.width}
         height={this.props.height}

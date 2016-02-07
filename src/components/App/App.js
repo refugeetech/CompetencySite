@@ -14,9 +14,27 @@ export class App extends Component {
         <Header />
         <TwoColumn />
         <ImageVenn title="ADMINISTRATION & EKONOMI" />
-        <Treemap title="Hälsa och sjukvård"/>
+        <Treemap
+          colors={[
+            "#caa4b8",
+            "#cc669c" ,
+            "#c46c9b",
+            "#a1356f",
+            "#8a2e5f",
+            "#892c5d"
+          ]}
+          title="Hälsa och sjukvård"/>
         <ImageVenn title="HOTELL & RESTAURANG" />
-        <Treemap title="Hälsa och sjukvård"/>
+        <Treemap
+          colors={[
+            "#cae000",
+            "#a5b800" ,
+            "#93a300",
+            "#6e7a00",
+            "#5c6600",
+            "#5b6500"
+          ]}
+          title="Hälsa och sjukvård"/>
       </div>
     );
   }
