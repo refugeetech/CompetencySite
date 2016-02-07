@@ -1,0 +1,36 @@
+/* ==================================================================
+   Navigation
+   ================================================================== */
+
+@import "styles/colors.css";
+@import "styles/sizes.css";
+
+.navigation {
+  margin-left: auto;
+  list-style: none;
+  text-transform: uppercase;
+
+  li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.active {
+  position: relative;
+
+  &:after {
+    background: var(--color-white);
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+  }
+}

@@ -6,10 +6,16 @@
 @import "styles/sizes.css";
 
 .header {
+  align-items: center;
   background: var(--color-mine-shaft);
   color: var(--color-white);
-  padding: 20px 0;
+  display: flex;
+  padding: 10px 40px;
   text-align: center;
   text-transform: uppercase;
   top: 0;
+}
+
+.logo {
+  height: 15px;
 }

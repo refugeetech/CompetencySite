@@ -7,7 +7,7 @@ import TwoColumn from '../TwoColumn/TwoColumn';
 import Treemap from '../Treemap/Treemap';
 
 @CSSModules(styles)
-export class App extends Component {
+export default class App extends Component {
   render () {
     return (
       <div className="container">

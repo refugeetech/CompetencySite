@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
+var TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
@@ -18,7 +19,10 @@ module.exports = {
     new ExtractTextPlugin('style.css', { allChunks: true }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new LiveReloadPlugin()
+    new LiveReloadPlugin(),
+    new TransferWebpackPlugin([
+      { from: 'images', to: 'images' }
+    ], path.join(__dirname, 'src'))
   ],
   postcss: [
     require('postcss-import')({

@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
@@ -24,7 +25,10 @@ module.exports = {
       compressor: {
         warnings: false
       }
-    })
+    }),
+    new TransferWebpackPlugin([
+      { from: 'images', to: 'images' }
+    ], path.join(__dirname, 'src'))
   ],
   postcss: [
     require('postcss-import')({
