@@ -19,7 +19,7 @@
   }
 
   @media (--bp-med) {
-    margin-top: 0;
+    margin: 20px 0;
     padding-left: 20px;
   }
 }

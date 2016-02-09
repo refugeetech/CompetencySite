@@ -13,20 +13,28 @@
   }
 }
 
-.iphone {
-  height: 500px;
+.iphone-wrap {
   position: absolute;
   right: -118px;
-  top: 50%;
   transform: translateY(-50%);
+  top: 50%;
   z-index: 1;
 
   @media (--bp-med) {
     display: block;
-    margin: 0 auto;
+    margin-top: 40px;
     position: relative;
     right: 0;
     transform: translateY(0);
     top: 0;
+  }
+}
+
+.iphone {
+  height: 500px;
+
+  @media (--bp-med) {
+    display: block;
+    margin: 0 auto;
   }
 }

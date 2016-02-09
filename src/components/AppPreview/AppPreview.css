@@ -1,11 +1,17 @@
+/* ==================================================================
+   App preview
+   ================================================================== */
+
+@import "styles/colors";
+@import "styles/sizes";
 
 .app {
-  border:1px inset;
+  border: 1px inset rgba(0,0,0,.1);
   height: 450px;
   position: absolute;
-  right: -112px;
-  width:215px;
-  height:365px;
+  right: 8px;
+  width: 215px;
+  height: 365px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;

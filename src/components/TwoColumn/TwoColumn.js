@@ -19,8 +19,10 @@ export default class TwoColumn extends Component {
           <ButtonLink
             href="http://app.competency.se"
             text="Start now" />
-          <img src="/static/images/iphone.png" styleName="iphone" />
-          <AppPreview />
+          <div styleName="iphone-wrap">
+            <img src="/static/images/iphone.png" styleName="iphone" />
+            <AppPreview />
+          </div>
         </Content>
         <Content
           backgroundImage="url(/static/images/listbg.jpg)"
