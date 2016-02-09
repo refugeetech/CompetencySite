@@ -4,6 +4,7 @@ import styles from './TwoColumn.css';
 import Content from '../Content/Content';
 import List from '../List/List';
 import AppPreview from '../AppPreview/AppPreview'
+import ButtonLink from '../ButtonLink/ButtonLink'
 import { Row, Column } from '../Layout/Layout';
 
 @CSSModules(styles)
@@ -15,9 +16,11 @@ export default class TwoColumn extends Component {
           <h1>Are you looking for a job in Sweden?</h1>
           <h2>We are visualizing available competencies within asylum seekers in Sweden.</h2>
           <p>Help us by sharing your previous work experience and education levels. We will share the aggregated statistics to local companies in your area and to the authorities. Our goal is to make the job seeking process as short as possible by matching supply and demand more efficiently.</p>
+          <ButtonLink
+            href="http://app.competency.se"
+            text="Start now" />
           <img src="/static/images/iphone.png" styleName="iphone" />
           <AppPreview />
-          <a styleName="button" href="http://app.competency.se">Start now</a>
         </Content>
         <Content
           backgroundImage="url(/static/images/listbg.jpg)"
