@@ -1,0 +1,15 @@
+/* ==================================================================
+   ButtonLink
+   ================================================================== */
+
+@import "styles/colors";
+@import "styles/sizes";
+
+.button {
+  border-radius: 5px;
+  padding: 10px;
+  border: 3px solid var(--color-white);
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+}
