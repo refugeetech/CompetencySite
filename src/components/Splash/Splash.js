@@ -12,9 +12,9 @@ export default class Splash extends Component {
       <div className="container">
       <Content backgroundImage="url(/static/images/skog.jpg)" flex="2" left>
         <h1>VI HJ&Auml;LPER TILL ATT SYNLIGG&Ouml;RA JOBB OCH KOMPETENS</h1>
-        <h2>
+        <p>
           Registrera dig och dela med dig vav dina kompetenser, så att du sedan kan ta del av lediga jobb och bli synlig för arbetsgivare.
-        </h2>
+        </p>
         <ButtonLink
           href="http://app.competency.se"
           text="Registrera dig" />
