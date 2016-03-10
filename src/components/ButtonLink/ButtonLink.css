@@ -6,7 +6,7 @@
 @import "styles/sizes";
 
 .button {
-  border: 3px solid var(--color-white);
+  border: 3px solid var(--color-lipstick);
   border-radius: 5px;
   display: inline-block;
   font-size: 18px;
@@ -14,9 +14,10 @@
   padding: 15px 30px;
   text-align: center;
   transition: all 200ms ease-in-out;
+  background: var(--color-lipstick);
 
   &:hover {
-    background: var(--color-white);
-    color: var(--color-mine-shaft);
+    background: var(--color-lipstick);
+    color: var(--color-white);
   }
 }

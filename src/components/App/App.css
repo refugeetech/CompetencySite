@@ -3,11 +3,12 @@
 
 :global {
   body {
-    color: var(--color-mine-shaft);
+    color: var(--color-white);
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     letter-spacing: 0.01em;
     margin: 0;
+    background-color: var(--color-mine-shaft);
   }
 
   a {

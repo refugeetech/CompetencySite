@@ -12,7 +12,6 @@ export default class Header extends Component {
         <IndexLink to="/">
           <img src="/static/images/logo.png" styleName="logo" />
         </IndexLink>
-        <Navigation />
       </div>
     );
   }
