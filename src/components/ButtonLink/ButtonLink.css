@@ -7,7 +7,6 @@
 
 .button {
   border: 3px solid var(--color-carnation);
-  border-radius: 5px;
   color: var(--color-carnation);
   display: inline-block;
   font-size: 18px;
