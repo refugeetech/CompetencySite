@@ -1,19 +1,4 @@
-FROM smebberson/alpine-nginx-nodejs
+FROM nginx
 
-COPY package.json /app/
-WORKDIR /app
-
-RUN npm install
-
-COPY .babelrc ./
-COPY gulpfile.js ./
-
-COPY webpack.config.prod.js ./
-COPY index.html ./
-COPY devServer.js ./
-
-COPY ./src ./src
-RUN npm run build
-RUN mv dist /usr/html/static
-RUN cp index.html /usr/html/
-
+ADD ./index.html /usr/share/nginx/html/index.html
+ADD ./dist /usr/share/nginx/html/static
