@@ -50,6 +50,12 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['', '.js']
+    modulesDirectories: [
+      'src/styles',
+      'src/components',
+      'node_modules',
+      'src'
+    ],
+    extensions: ['', '.js', '.css']
   }
 };

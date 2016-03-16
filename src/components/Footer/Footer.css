@@ -1,0 +1,20 @@
+/* ==================================================================
+   Footer
+   ================================================================== */
+
+@import "styles/colors";
+@import "styles/sizes";
+
+.footer {
+  align-items: center;
+  background: var(--color-firefly);
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.logo {
+  composes: logo from '../Header/Header.css';
+
+  margin-bottom: 20px;
+}
