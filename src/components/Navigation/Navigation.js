@@ -2,23 +2,29 @@ import React, { PropTypes, Component } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Navigation.css';
 import { IndexLink, Link } from 'react-router'
+import classNames from 'classnames'
 
-@CSSModules(styles)
+@CSSModules(styles, { allowMultiple: true })
 export default class Navigation extends Component {
   render () {
     const links = [
       {
-        title: "Start",
-        to: '/'
+        title: "Registrera",
+        to: 'register'
       },
       {
-        title: 'About',
+        title: 'Om oss',
         to: 'about'
       }
     ];
 
+    const styleNames = classNames('navigation', {
+      right: this.props.right,
+      white: this.props.white
+    })
+
     return (
-      <ul styleName="navigation">
+      <ul styleName={styleNames}>
         {links.map((link, i) => {
           if (link.to === '/') {
             return (

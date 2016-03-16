@@ -1,24 +1,35 @@
-@import "styles/colors";
-@import "styles/grid";
+/* ==================================================================
+   App
+   ================================================================== */
 
+@import "styles/colors";
+@import "styles/sizes";
+
+/* App
+--------------------------------------------------*/
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Globals
+--------------------------------------------------*/
 :global {
+  html, body {
+    height: 100%;
+  }
+
   body {
-    color: var(--color-white);
+    color: var(--color-outer-space);
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     letter-spacing: 0.01em;
     margin: 0;
-    background-color: var(--color-mine-shaft);
-  }
-
-  a {
-    color: var(--color-white);
-    text-decoration: none;
-
-    &:visited,
-    &:hover {
-      color: var(--color-white);
-    }
   }
 
   p {
@@ -32,6 +43,7 @@
   }
 
   ul {
+    list-style: none;
     margin: 0;
     padding: 0;
   }

@@ -6,12 +6,10 @@
 @import "styles/sizes.css";
 
 .navigation {
-  margin-left: auto;
   list-style: none;
   text-transform: uppercase;
 
   @media (--bp-med) {
-    margin-left: 0;
     margin-top: 20px;
   }
 
@@ -21,6 +19,7 @@
     font-weight: bold;
     height: 26px;
     letter-spacing: 0.03em;
+    text-align: center;
 
     &:hover a {
       border-color: var(--color-white) !important;
@@ -40,10 +39,23 @@
     }
 
     a {
-      border-bottom: 3px solid rgba(0,0,0,0);
-      padding-bottom: 5px;
-      transition: border-color 200ms ease-in-out;
+      color: var(--color-outer-space);
+      text-decoration: none;
     }
+  }
+}
+
+.right {
+  margin-left: auto;
+
+  @media (--bp-med) {
+    margin-left: 0;
+  }
+}
+
+.white {
+  li a {
+    color: var(--color-white);
   }
 }
 

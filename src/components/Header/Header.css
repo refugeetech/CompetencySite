@@ -7,13 +7,11 @@
 
 .header {
   align-items: center;
-  background: var(--color-mine-shaft);
-  color: var(--color-white);
+  background: var(--color-alabaster);
+  color: var(--color-black);
   display: flex;
   padding: 30px 40px;
-  text-align: center;
   text-transform: uppercase;
-  top: 0;
 
   @media (--bp-med) {
     flex-direction: column;

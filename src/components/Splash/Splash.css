@@ -1,0 +1,23 @@
+/* ==================================================================
+   Splash
+   ================================================================== */
+
+@import "styles/colors";
+@import "styles/sizes";
+
+.title {
+  color: var(--color-carnation);
+  font-size: 60px;
+  text-transform: uppercase;
+
+  @media (--bp-med) {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+.text {
+  color: var(--color-outer-space);
+  letter-spacing: 0.002em;
+  line-height: 1.5;
+}
