@@ -11,6 +11,7 @@ COPY gulpfile.js ./
 COPY webpack.config.prod.js ./
 COPY index.html ./
 COPY devServer.js ./
+COPY nginx/*.conf /etc/nginx/conf.d/
 
 COPY ./src ./src
 RUN npm run build
