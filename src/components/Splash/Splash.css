@@ -19,5 +19,7 @@
 .text {
   color: var(--color-outer-space);
   letter-spacing: 0.002em;
-  line-height: 1.5;
+  line-height: 1.6;
+  padding-bottom: 3px;
+  background: var(--color-white);
 }
