@@ -11,9 +11,9 @@ export default class About extends Component {
       <div className="container">
         <Header />
         <div styleName="content">
-          <h1>The Gap - huge unrealised potential in the arriving competencies</h1>
+          <h1>Our goal</h1>
 
-          <h2>Its about matching supply and demand by visualizing both</h2>
+          <h2>We want to speed up the integration process for all refugees by visualizing the talent</h2>
 
           <p><em>Platform for asylum seekers</em> where they can register their competency and their contact information. The service will be available in multiple languages. </p>
 

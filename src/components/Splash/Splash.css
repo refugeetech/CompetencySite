@@ -20,4 +20,5 @@
   color: var(--color-outer-space);
   letter-spacing: 0.002em;
   line-height: 1.5;
+  width: 500px;
 }
