@@ -18,7 +18,7 @@ export default class Splash extends Component {
           </p>
           <ButtonLink
             href="http://app.competency.se"
-            text="Berätta om dig" />
+            text={LanguageStore.define('buttonTellAboutYourself')} />
         </Content>
       </div>
     );

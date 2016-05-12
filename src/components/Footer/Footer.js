@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './Footer.css'
-import Navigation from '../Navigation/Navigation';
-import { IndexLink } from 'react-router';
+import Navigation from '../Navigation/Navigation'
+import { IndexLink } from 'react-router'
 
 export class Footer extends Component {
   render () {

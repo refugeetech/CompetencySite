@@ -3,17 +3,18 @@ import CSSModules from 'react-css-modules';
 import styles from './Navigation.css';
 import { IndexLink, Link } from 'react-router'
 import classNames from 'classnames'
+import LanguageStore from '../../stores/LanguageStore'
 
 @CSSModules(styles, { allowMultiple: true })
 export default class Navigation extends Component {
   render () {
     const links = [
       {
-        title: "Registrera",
+        title: LanguageStore.define('register'),
         to: 'register'
       },
       {
-        title: 'Om oss',
+        title: LanguageStore.define('aboutUs'),
         to: 'about'
       }
     ];
