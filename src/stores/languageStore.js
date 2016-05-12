@@ -1,17 +1,12 @@
 import alt from '../alt'
-import LanguageActions from '../actions/LanguageActions'
 
 class LanguageStore {
   constructor () {
-    this.bindListeners({
-      setLanguage: LanguageActions.setLanguage,
-      define: LanguageActions.define
-    })
-
     this.language = 'sv'
     this.defs = {
       sv: {
-        'title': 'Låt jobben hitta dig istället'
+        'title': 'Låt jobben hitta dig istället',
+        'intro': 'Som nyanländ tar det tid innan du kan börja jobba. Genom att dela din nuvarande arbetsstatus och dina kompetenser även innan du har ett personnummer kan potentiella arbetsgivare få koll på att du finns och erbjuda praktikplatser.'
       }
     }
   }
@@ -20,11 +15,8 @@ class LanguageStore {
     this.language = language
   }
 
-  define (def) {
-    console.log('hit kommer vi nu', def, this.defs, this.defs[this.language], this.defs[this.language][def])
-    let meow = this.defs[this.language][def]
-    console.log('ret', meow)
-    return meow
+  static define (def) {
+    return this.state.defs[this.state.language][def]
   }
 }
 
