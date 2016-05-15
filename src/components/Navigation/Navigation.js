@@ -3,7 +3,7 @@ import CSSModules from 'react-css-modules';
 import styles from './Navigation.css';
 import { IndexLink, Link } from 'react-router'
 import classNames from 'classnames'
-import LanguageStore from '../../stores/LanguageStore'
+import LanguageStore from '../../stores/languageStore.js'
 
 @CSSModules(styles, { allowMultiple: true })
 export default class Navigation extends Component {

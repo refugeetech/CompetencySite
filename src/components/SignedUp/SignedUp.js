@@ -3,7 +3,7 @@ import CSSModules from 'react-css-modules'
 import styles from './SignedUp.css'
 import Content from '../Content/Content'
 import { get } from '../../helpers/api.js'
-import LanguageStore from '../../stores/LanguageStore'
+import LanguageStore from '../../stores/languageStore.js'
 
 export class SignedUp extends Component {
   constructor (props) {

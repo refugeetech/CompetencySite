@@ -4,7 +4,7 @@ import styles from './Splash.css';
 import Content from '../Content/Content';
 import List from '../List/List';
 import ButtonLink from '../ButtonLink/ButtonLink'
-import LanguageStore from '../../stores/LanguageStore'
+import LanguageStore from '../../stores/languageStore.js'
 
 @CSSModules(styles)
 export default class Splash extends Component {
