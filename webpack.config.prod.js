@@ -59,6 +59,8 @@ module.exports = {
     modulesDirectories: [
       'src/styles',
       'src/components',
+      'src/stores',
+      'src/actions',
       'node_modules',
       'src'
     ],
