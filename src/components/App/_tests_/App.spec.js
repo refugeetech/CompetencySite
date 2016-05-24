@@ -1,25 +1,16 @@
-import chai from 'chai';
-let expect = chai.expect;
-import React from 'react';
-import sd from 'skin-deep';
-import proxyquire from 'proxyquire';
-let File, { App } = proxyquire('../App', {
-  'react-css-modules': function () { return function () {} },
-  './App.css': {}
-})
+import React from 'react'
+import { App } from '../App'
 
 describe('App', () => {
-  var tree, vdom;
+  let component
 
   beforeEach(() => {
-    tree = sd.shallowRender(
+    component = shallow(
       <App />
-    );
-
-    vdom = tree.getRenderOutput();
-  });
+    )
+  })
 
   it('should render', () => {
-    expect(vdom.type).to.eql('div');
-  });
-});
+    expect(component.type()).to.eql('div')
+  })
+})

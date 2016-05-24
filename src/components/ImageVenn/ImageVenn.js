@@ -1,17 +1,16 @@
-import React, { PropTypes, Component } from 'react';
-import CSSModules from 'react-css-modules';
-import styles from './ImageVenn.css';
-import Venn from '../Venn/Venn';
+import React, { PropTypes, Component } from 'react'
+import CSSModules from 'react-css-modules'
+import styles from './ImageVenn.css'
+import Venn from '../Venn/Venn'
 
-@CSSModules(styles)
-export default class ImageVenn extends Component {
+export class ImageVenn extends Component {
   render () {
     const {
       available,
       image,
       matched,
       title
-    } = this.props;
+    } = this.props
 
     return (
       <div style={{ backgroundImage: image }} styleName="image-venn">
@@ -20,6 +19,8 @@ export default class ImageVenn extends Component {
           <Venn available={available} matched={matched} />
         </div>
       </div>
-    );
+    )
   }
 }
+
+export default CSSModules(ImageVenn, styles)

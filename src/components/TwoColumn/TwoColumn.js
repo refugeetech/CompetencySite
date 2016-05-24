@@ -1,14 +1,13 @@
-import React, { PropTypes, Component } from 'react';
-import CSSModules from 'react-css-modules';
-import styles from './TwoColumn.css';
-import Content from '../Content/Content';
-import List from '../List/List';
+import React, { PropTypes, Component } from 'react'
+import CSSModules from 'react-css-modules'
+import styles from './TwoColumn.css'
+import Content from '../Content/Content'
+import List from '../List/List'
 import AppPreview from '../AppPreview/AppPreview'
 import ButtonLink from '../ButtonLink/ButtonLink'
-import { Row, Column } from '../Layout/Layout';
+import { Row, Column } from '../Layout/Layout'
 
-@CSSModules(styles)
-export default class TwoColumn extends Component {
+export class TwoColumn extends Component {
   render () {
     return (
       <div styleName="two-column">
@@ -49,6 +48,8 @@ export default class TwoColumn extends Component {
             ]}/>
         </Content>
       </div>
-    );
+    )
   }
 }
+
+export default CSSModules(TwoColumn, styles)

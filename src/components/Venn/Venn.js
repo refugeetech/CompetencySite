@@ -1,14 +1,13 @@
-import React, { PropTypes, Component } from 'react';
-import CSSModules from 'react-css-modules';
-import styles from './Venn.css';
+import React, { PropTypes, Component } from 'react'
+import CSSModules from 'react-css-modules'
+import styles from './Venn.css'
 
-@CSSModules(styles)
-export default class Venn extends Component {
+export class Venn extends Component {
   render () {
     const {
       available,
       matched
-    } = this.props;
+    } = this.props
 
     return (
       <div styleName="venn-wrap">
@@ -19,6 +18,8 @@ export default class Venn extends Component {
         </div>
         <div styleName="matched-title">MATCHING ASYLUM SEEKERS</div>
       </div>
-    );
+    )
   }
 }
+
+export default CSSModules(Venn, styles)

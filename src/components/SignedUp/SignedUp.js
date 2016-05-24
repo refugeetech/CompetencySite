@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './SignedUp.css'
 import Content from '../Content/Content'
@@ -6,19 +6,25 @@ import { get } from '../../helpers/api.js'
 import LanguageStore from '../../stores/languageStore.js'
 
 export class SignedUp extends Component {
-  constructor (props) {
-    super(props)
+  constructor () {
+    super(...arguments)
+
     this.state = { count: 0 }
+
+    this._setState = this._setState.bind(this)
   }
+
   componentDidMount () {
-    var self = this
-    get(`http://api.competency.se/users/count`)
-      .then(data => {
-        self.setState({
-          count: data.count
-        })
-      })
+    get('http://api.competency.se/users/count')
+      .then(data => this._setState(data))
   }
+
+  _setState (data) {
+    this.setState({
+      count: data.count
+    })
+  }
+
   render () {
     return (
       <Content full narrow>

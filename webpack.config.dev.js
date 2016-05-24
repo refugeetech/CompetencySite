@@ -1,8 +1,9 @@
-var path = require('path');
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var LiveReloadPlugin = require('webpack-livereload-plugin');
-var TransferWebpackPlugin = require('transfer-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const LiveReloadPlugin = require('webpack-livereload-plugin')
+const TransferWebpackPlugin = require('transfer-webpack-plugin')
+const HappyPack = require('happypack')
 
 module.exports = {
   devtool: 'eval',
@@ -18,15 +19,22 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('style.css', { allChunks: true }),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.ProvidePlugin({
+      fetch: 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+    }),
+    new TransferWebpackPlugin([
+      { from: 'assets', to: './' }
+    ], path.join(__dirname, 'src')),
     new webpack.NoErrorsPlugin(),
     new LiveReloadPlugin(),
-    new TransferWebpackPlugin([
-      { from: 'images', to: 'images' }
-    ], path.join(__dirname, 'src'))
+    new HappyPack({
+      loaders: [ 'babel' ],
+      threads: 4
+    })
   ],
   postcss: [
     require('postcss-import')({
-      from: 'src'
+      path: 'src'
     }),
     require('postcss-css-variables'),
     require('postcss-custom-media'),
@@ -34,18 +42,34 @@ module.exports = {
     require('postcss-for'),
     require('postcss-nested'),
     require('autoprefixer'),
-    require('cssnano')
+    require('cssnano')({
+      zindex: false
+    })
   ],
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      }
+    ],
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
+        loader: 'happypack/loader',
         include: path.join(__dirname, 'src')
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
+        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&sourceMap=true&localIdentName=[name]__[local]___[hash:base64:5]!postcss')
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
       }
     ]
   },
@@ -53,11 +77,9 @@ module.exports = {
     modulesDirectories: [
       'src/styles',
       'src/components',
-      'src/stores',
-      'src/actions',
       'node_modules',
       'src'
     ],
-    extensions: ['', '.js', '.css']
+    extensions: ['', '.js', '.css', '.json', '.md']
   }
-};
+}

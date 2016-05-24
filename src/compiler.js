@@ -1,4 +1,4 @@
-var babel = require('babel');
+var babel = require('babel-core');
 var fs = require('fs');
 var origJs = require.extensions['.js'];
 

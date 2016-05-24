@@ -1,4 +1,4 @@
-import request from 'superagent';
+import request from 'superagent'
 
 const HttpClient = {
 
@@ -9,14 +9,14 @@ const HttpClient = {
       .end((err, res) => {
         if (err) {
           if (err.status === 404) {
-            resolve(null);
+            resolve(null)
           } else {
-            reject(err);
+            reject(err)
           }
         } else {
-          resolve(res.body);
+          resolve(res.body)
         }
-      });
+      })
   }),
 
   post: path => new Promise((resolve, reject) => {
@@ -25,16 +25,16 @@ const HttpClient = {
       .end((err, res) => {
         if (err) {
           if (err.status === 404) {
-            resolve(null);
+            resolve(null)
           } else {
-            reject(err);
+            reject(err)
           }
         } else {
-          resolve(res.body);
+          resolve(res.body)
         }
-      });
+      })
   })
 
-};
+}
 
-export default HttpClient;
+export default HttpClient

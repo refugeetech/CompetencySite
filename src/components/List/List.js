@@ -1,21 +1,21 @@
-import React, { PropTypes, Component } from 'react';
-import CSSModules from 'react-css-modules';
-import styles from './List.css';
+import React, { PropTypes } from 'react'
+import CSSModules from 'react-css-modules'
+import styles from './List.css'
 
-@CSSModules(styles)
-export default class List extends Component {
-  render () {
-    return (
-      <ul styleName="list">
-        {this.props.items.map((item, i) => {
-          return (
-            <li key={i}>
-              <span styleName="title">{item.title}</span>
-              {item.content}
-            </li>
-          );
-        })}
-      </ul>
-    );
-  }
+export const List = ({ items }) =>
+  <ul styleName="list">
+    {items.map((item, i) => {
+      return (
+        <li key={i}>
+          <span styleName="title">{item.title}</span>
+          {item.content}
+        </li>
+      )
+    })}
+  </ul>
+
+List.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object)
 }
+
+export default CSSModules(List, styles)

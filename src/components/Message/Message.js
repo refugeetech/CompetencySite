@@ -1,13 +1,12 @@
-import React, { PropTypes, Component } from 'react';
-import CSSModules from 'react-css-modules';
-import styles from './Message.css';
+import React, { PropTypes, Component } from 'react'
+import CSSModules from 'react-css-modules'
+import styles from './Message.css'
 
-@CSSModules(styles)
-export default class Message extends Component {
+export class Message extends Component {
   render () {
     const {
       message
-    } = this.props;
+    } = this.props
 
     return (
       <div styleName="message">
@@ -15,6 +14,8 @@ export default class Message extends Component {
           {message}
         </div>
       </div>
-    );
+    )
   }
 }
+
+export default CSSModules(Message, styles)

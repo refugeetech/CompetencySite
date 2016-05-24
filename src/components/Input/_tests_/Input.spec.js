@@ -1,68 +1,61 @@
-import chai from 'chai';
-let expect = chai.expect;
-import React from 'react';
-import sd from 'skin-deep';
-import proxyquire from 'proxyquire';
-let Input = proxyquire('../Input', {
-  'react-css-modules': function () { return function () {} },
-  './Input.css': {}
-})
+import React from 'react'
+import { Input } from '../Input'
 
 describe('Input', () => {
-  var input, tree, vdom;
+  let component
+  let input
 
   beforeEach(() => {
-    tree = sd.shallowRender(
+    component = shallow(
       <Input
         label="läjbel"
         name="test"
         pattern="[0-9]*"
         placeholder="Skriv något fint" />
-    );
+    )
 
-    vdom = tree.getRenderOutput();
-    input = tree.findNode('input');
-  });
+    input = component.find('input')
+  })
 
   it('should render', () => {
-    expect(vdom.type).to.eql('div');
-  });
+    expect(component.type()).to.eql('div')
+  })
 
-  it('should render a placeholder', function () {
-    expect(input.props.placeholder).to.eql('Skriv något fint');
-  });
+  it('should render a placeholder', () => {
+    expect(input).to.have.prop('placeholder', 'Skriv något fint')
+  })
 
-  it('should render with type text', function () {
-    expect(input.props.type).to.eql('text');
-  });
+  it('should render with type text', () => {
+    expect(input).to.have.prop('type', 'text')
+  })
 
   it('should set id to be name', () => {
-    expect(input.props.id).to.eql('test');
-  });
+    expect(input).to.have.prop('id', 'test')
+  })
 
   it('should render with a label', () => {
-    var label = tree.findNode('label');
+    const label = component.find('label')
 
-    expect(label.props.children).to.eql('läjbel');
-    expect(label.props.htmlFor).to.eql('test');
-    expect(label.props.styleName).to.eql('label');
-  });
+    expect(label).to.have.prop('children', 'läjbel')
+    expect(label).to.have.prop('htmlFor', 'test')
+    expect(label).to.have.prop('styleName', 'label')
+  })
 
-  it('should render with provided type', function () {
-    tree = sd.shallowRender(
-      <Input type="tel" />
-    );
+  it('should render with provided type', () => {
+    component.setProps({
+      type: 'tel'
+    })
 
-    vdom = tree.getRenderOutput();
-    input = tree.findNode('input');
-    expect(input.props.type).to.eql('tel');
-  });
+    input = component.find('input')
 
-  it('should render with a pattern', function () {
-    expect(input.props.pattern).to.eql('[0-9]*');
-  });
+    expect(input).to.have.prop('type', 'tel')
+  })
+
+  it('should render with a pattern', () => {
+    expect(input).to.have.prop('pattern', '[0-9]*')
+  })
 
   it('should send styleName to input', () => {
-    expect(input.props.styleName).to.eql('input');
-  });
-});
+    expect(input).to.have.prop('styleName', 'input')
+  })
+})

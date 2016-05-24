@@ -1,9 +1,8 @@
-import React, { Component, PropTypes } from 'react';
-import CSSModules from 'react-css-modules';
-import styles from './Input.css';
+import React, { Component, PropTypes } from 'react'
+import CSSModules from 'react-css-modules'
+import styles from './Input.css'
 
-@CSSModules(styles)
-export default class Input extends Component {
+export class Input extends Component {
   static propTypes = {
     label: PropTypes.string,
     name: PropTypes.string,
@@ -25,7 +24,7 @@ export default class Input extends Component {
       'url',
       'week'
     ])
-  };
+  }
 
   renderLabel () {
     if (this.props.label) {
@@ -33,10 +32,10 @@ export default class Input extends Component {
         <label htmlFor={this.props.name} styleName="label">
           {this.props.label}
         </label>
-      );
+      )
     }
 
-    return null;
+    return null
   }
 
   render () {
@@ -50,6 +49,8 @@ export default class Input extends Component {
           type={this.props.type || 'text'}
           />
       </div>
-    );
+    )
   }
 }
+
+export default CSSModules(Input, styles)

@@ -1,28 +1,23 @@
-var gulp = require('gulp');
-var mocha = require('gulp-mocha');
-var env = require('gulp-env');
+const gulp = require('gulp')
+var mocha = require('gulp-mocha')
 
-require('./src/compiler.js');
-require('babel/register');
+require('./src/compiler.js')
+require('babel-core/register')
 
-gulp.task('mocha', function() {
-  env({
-    vars: {
-      NODE_ENV: 'production'
-    }
-  });
-
+gulp.task('mocha', () => {
   return gulp
-    .src('./src/components/**/*.spec.js', { read: false })
-    .pipe(mocha());
-});
+    .src([
+      './src/specHelper.js',
+      './src/components/**/*.spec.js'
+    ], { read: false })
+    .pipe(mocha())
+})
 
-// Rerun the task when a file changes
-gulp.task('watch', function() {
-  gulp.watch('./src/components/**/*.js', ['mocha']);
-});
+gulp.task('watch', () => {
+  gulp.watch('./src/components/**/*.js', ['mocha'])
+})
 
 gulp.task('default', [
   'mocha',
   'watch'
-]);
+])
