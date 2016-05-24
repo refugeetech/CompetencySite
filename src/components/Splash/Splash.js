@@ -3,7 +3,7 @@ import CSSModules from 'react-css-modules'
 import styles from './Splash.css'
 import Content from '../Content/Content'
 import ButtonLink from '../ButtonLink/ButtonLink'
-import LanguageStore from '../../stores/languageStore.js'
+import LanguageStore from '../../stores/LanguageStore.js'
 
 export const Splash = () =>
   <div className="container">
