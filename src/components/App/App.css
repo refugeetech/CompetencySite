@@ -77,4 +77,11 @@
       line-height: 30px;
     }
   }
+
+  /* Languages
+  -------------------------------------------------- */
+  .language-fa {
+    direction: rtl;
+    font-family: 'Nazanin';
+  }
 }

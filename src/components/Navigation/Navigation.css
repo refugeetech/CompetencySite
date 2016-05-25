@@ -62,3 +62,19 @@
 .active {
   border-color: var(--color-white) !important;
 }
+
+/* Languages
+-------------------------------------------------- */
+:global .language-fa {
+  :local .right {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  :local .navigation {
+    li:not(:last-child) {
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+}

@@ -3,9 +3,10 @@ import CSSModules from 'react-css-modules'
 import styles from './About.css'
 import Header from '../Header/Header'
 import isPhone from '../../helpers/isPhone'
+import LanguageStore from '../../stores/LanguageStore'
 
 export const About = () =>
-  <div className="container">
+<div className={['container', `language-${LanguageStore.currentLanguage()}`].join(' ')}>
     <Header />
     <div styleName="content">
       <h1>Our goal</h1>

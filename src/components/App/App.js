@@ -5,9 +5,10 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import SignedUp from '../SignedUp/SignedUp'
 import Splash from '../Splash/Splash'
+import LanguageStore from '../../stores/LanguageStore'
 
 export const App = () =>
-  <div className="container" styleName="app">
+  <div className={['container', `language-${LanguageStore.currentLanguage()}`].join(' ')} styleName="app">
     <Header />
     <div styleName="content">
       <Splash />

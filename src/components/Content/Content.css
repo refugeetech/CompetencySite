@@ -41,3 +41,19 @@
     text-align: left;
   }
 }
+
+/* Languages
+-------------------------------------------------- */
+:global .language-fa {
+  :local .content {
+    transform: scaleX(-1);
+
+    > div {
+      transform: scaleX(-1);
+    }
+  }
+
+  :local .inner {
+    max-width: 100%;
+  }
+}
