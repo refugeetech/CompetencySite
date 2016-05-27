@@ -10,8 +10,8 @@ import {
 import useScroll from 'react-router-scroll'
 import LanguageActions from './actions/LanguageActions'
 
-import App from './components/App/App'
-import About from './components/About/About'
+import App from './views/App'
+import About from './views/About'
 import NotFound from './views/NotFound'
 
 function redirect (url) {

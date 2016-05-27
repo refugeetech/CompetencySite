@@ -1,7 +1,7 @@
 import React from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './About.css'
-import Header from '../Header/Header'
+import Header from '../../components/Header/Header'
 import isPhone from '../../helpers/isPhone'
 import LanguageStore from '../../stores/LanguageStore'
 
