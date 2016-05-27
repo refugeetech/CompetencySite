@@ -80,6 +80,7 @@
 
   /* Languages
   -------------------------------------------------- */
+  .language-ar,
   .language-fa {
     direction: rtl;
     font-family: 'Nazanin';

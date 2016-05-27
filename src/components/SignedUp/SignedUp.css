@@ -34,6 +34,7 @@
 
 /* Languages
 -------------------------------------------------- */
+:global .language-ar,
 :global .language-fa {
   :local .signed {
     border-left: 0;

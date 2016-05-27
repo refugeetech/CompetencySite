@@ -1,8 +1,8 @@
 import alt from '../alt'
 
 class LanguageActions {
-  setLanguage (language) {
-    return language
+  constructor () {
+    this.generateActions('setLanguage')
   }
 }
 

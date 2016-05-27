@@ -65,6 +65,7 @@
 
 /* Languages
 -------------------------------------------------- */
+:global .language-ar,
 :global .language-fa {
   :local .right {
     margin-left: 0;

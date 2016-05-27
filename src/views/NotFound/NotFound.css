@@ -1,0 +1,24 @@
+/* ==================================================================
+   NotFound
+   ================================================================== */
+
+@import "styles/colors.css";
+@import "styles/sizes.css";
+
+.four-o-four {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.link {
+  color: var(--color-carnation);
+  display: block;
+  margin-top: var(--spacing-third);
+}
+
+.logo {
+  height: 125px;
+}

@@ -44,6 +44,7 @@
 
 /* Languages
 -------------------------------------------------- */
+:global .language-ar,
 :global .language-fa {
   :local .content {
     transform: scaleX(-1);
