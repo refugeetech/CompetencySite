@@ -47,6 +47,20 @@ class LanguageStore {
     }
   }
 
+  static currentLanguage () {
+    return this.state.language
+  }
+
+  static define (def) {
+    const language = this.state.defs[this.state.language]
+
+    if (!language || !language[def]) {
+      return ''
+    }
+
+    return language[def]
+  }
+
   setLanguage (language) {
     if (!this.defs[language]) {
       this.language = 'sv'
@@ -54,18 +68,6 @@ class LanguageStore {
     }
 
     this.language = language
-  }
-
-  static currentLanguage () {
-    return this.state.language
-  }
-
-  static define (def) {
-    if (!this.state.defs[this.state.language]) {
-      return ''
-    }
-
-    return this.state.defs[this.state.language][def]
   }
 }
 
