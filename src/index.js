@@ -30,7 +30,7 @@ ReactDOM.render((
 
     <Route
       component={App}
-      onEnter={(nextState) => {
+      onEnter={nextState => {
         LanguageActions.setLanguage(nextState.params.language)
       }}
       path="/lang/:language" />
