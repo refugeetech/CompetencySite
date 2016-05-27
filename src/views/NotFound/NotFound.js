@@ -8,7 +8,7 @@ export const NotFound = () =>
     <img src="/static/images/logo.png" styleName="logo" />
     The page you requested could not be found.
     <IndexLink className={styles.link} to="/">
-      Return to the startpage
+      Return to the start page
     </IndexLink>
   </div>
 
