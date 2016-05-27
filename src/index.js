@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import {
   applyRouterMiddleware,
   browserHistory,
+  IndexRoute,
   Route,
   Router
 } from 'react-router'
@@ -13,6 +14,7 @@ import LanguageActions from './actions/LanguageActions'
 import App from './views/App'
 import About from './views/About'
 import NotFound from './views/NotFound'
+import Start from './views/Start'
 
 function redirect (url) {
   window.location = url
@@ -26,7 +28,10 @@ ReactDOM.render((
   <Router
     history={browserHistory}
     render={applyRouterMiddleware(useScroll())}>
-    <Route component={App} path="/" />
+    <Route component={App} path="/">
+      <IndexRoute component={Start} />
+      <Route component={About} path="/about" />
+    </Route>
 
     <Route
       component={App}
@@ -36,7 +41,6 @@ ReactDOM.render((
       path="/lang/:language" />
 
     <Route onEnter={redirect.bind(this, 'http://app.competency.se')} path="register" />
-    <Route component={About} path="about" />
     <Route component={NotFound} path="*" />
   </Router>
 ), document.getElementById('root'))
