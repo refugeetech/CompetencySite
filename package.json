@@ -68,6 +68,7 @@
     "postcss": "^5.0.14",
     "postcss-custom-media": "^5.0.1",
     "react": "^15.1.0",
+    "react-addons-shallow-compare": "^15.1.0",
     "react-css-modules": "^3.6.0",
     "react-d3": "^0.4.0",
     "react-dom": "^15.1.0",
