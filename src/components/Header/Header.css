@@ -10,8 +10,9 @@
   background: var(--color-alabaster);
   color: var(--color-black);
   display: flex;
-  padding: 30px 40px;
+  padding: 10px 40px;
   text-transform: uppercase;
+  line-height: 12px;
 
   @media (--bp-med) {
     flex-direction: column;

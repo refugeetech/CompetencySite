@@ -10,4 +10,5 @@
   background: var(--color-supernova);
   border: 0;
   padding: var(--spacing-third) var(--spacing);
+  border-radius: 50px;
 }
