@@ -33,3 +33,11 @@
 .logo {
   max-width: 50%;
 }
+
+.buttoncontainer {
+  text-align: center;
+  margin: 20px auto; 
+  a:first-child {
+    margin-right: 60px;
+  }
+}
