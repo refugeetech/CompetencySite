@@ -2,22 +2,7 @@
    Treemap
    ================================================================== */
 
-@import "styles/colors.css";
-@import "styles/sizes.css";
+@import "styles/colors";
+@import "styles/sizes";
 
-:global {
-  .rd3-treemap-cell-text {
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-
-  .rd3-basic-chart {
-    line-height: 0;
-  }
-
-  .rd3-treemap-cell-text-light {
-    font-weight: 300;
-    letter-spacing: 0.03em;
-  }
-}
+@import "../../../node_modules/react-vis/main";

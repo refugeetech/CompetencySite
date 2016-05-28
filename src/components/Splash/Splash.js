@@ -18,6 +18,8 @@ export const Splash = () =>
       <ButtonLink
         href="http://app.competency.se"
         text={LanguageStore.define('buttonTellAboutYourself')} />
+   
+
     </Content>
   </div>
 
