@@ -2,7 +2,18 @@
    Treemap
    ================================================================== */
 
+@import "../../../node_modules/react-vis/main";
 @import "styles/colors";
 @import "styles/sizes";
 
-@import "../../../node_modules/react-vis/main";
+
+.container {
+  margin: 10px;
+}
+
+:global {
+  .rv-treemap__leaf {
+    position: absolute;
+  }
+}
+
