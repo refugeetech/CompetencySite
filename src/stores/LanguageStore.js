@@ -30,7 +30,7 @@ class LanguageStore {
         'registeredPeople': 'لورم ایپسوم متن:',
         'register': 'لورم',
         'aboutUs': 'لورم ایپسوم',
-        'treeMap': 'Competence Visualization'
+        'treeMap': 'Visualization'
       },
       sv: {
         'title': 'Låt jobben hitta dig istället',
@@ -40,7 +40,7 @@ class LanguageStore {
         'registeredPeople': 'Registrerade personer:',
         'register': 'Registrera',
         'aboutUs': 'Om oss',
-        'treeMap': 'Interaktivt filter'
+        'treeMap': 'Visualisera'
       },
       en: {
         'title': 'Let the jobs find you instead',
@@ -50,7 +50,7 @@ class LanguageStore {
         'registeredPeople': 'Registered people:',
         'register': 'Register',
         'aboutUs': 'About us',
-        'treeMap': 'Competence Visualization'
+        'treeMap': 'Visualization'
       }
     }
   }
