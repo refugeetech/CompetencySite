@@ -35,11 +35,6 @@ ReactDOM.render((
       <Route component={About} path="/about" />
     </Route>
 
-    <Route component={Treemap} path="/">
-      <IndexRoute component={Start} />
-      <Route component={Treemap} path="/treemap" />
-    </Route>
-
     <Route
       component={App}
       onEnter={nextState => {
@@ -48,7 +43,7 @@ ReactDOM.render((
       path="/lang/:language" />
 
     <Route
-      component={App}
+      component={Treemap}
       onEnter={nextState => {
         QueryActions.setQuery(nextState.params.query)
       }}

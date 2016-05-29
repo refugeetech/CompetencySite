@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './Treemap.css'
 import Content from '../Content/Content'
@@ -15,7 +15,7 @@ export class ReactTreemap extends Component {
   }
 
   componentDidMount () {
-    get('http://competency-api-develop.competency.e176268b.svc.dockerapp.io:4001/visualization')
+    get(`http://10.10.2.41:1337/visualization?q=${this.props.query}`)
       .then((data) => this._setState(data))
   }
 
@@ -41,6 +41,10 @@ export class ReactTreemap extends Component {
       </div>
     )
   }
+}
+
+ReactTreemap.propTypes = {
+  query: PropTypes.string
 }
 
 export default CSSModules(ReactTreemap, styles)
