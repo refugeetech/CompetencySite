@@ -47,7 +47,14 @@ ReactDOM.render((
       onEnter={nextState => {
         QueryActions.setQuery(nextState.params.query)
       }}
-      path="/visualization/:query" />
+      path="/visualization">
+      <Route
+      component={Treemap}
+      onEnter={nextState => {
+        QueryActions.setQuery(nextState.params.query)
+      }}
+      path="/visualization/:query"/>
+    </Route>
 
     <Route onEnter={redirect.bind(this, 'http://app.competency.se')} path="register" />
     <Route component={NotFound} path="*" />
