@@ -15,7 +15,7 @@ export class ReactTreemap extends Component {
   }
 
   componentDidMount () {
-    get('http://api.competency.se/visualization')
+    get('http://competency-api-develop.competency.e176268b.svc.dockerapp.io:4001/visualization')
       .then((data) => this._setState(data))
   }
 
