@@ -6,10 +6,10 @@
 @import "styles/sizes.css";
 
 .content {
-  background-position: center center;
+  background-position: left top;
   background-size: cover;
-  padding: 150px;
   position: relative;
+  height: calc(100vh - 70px);
 
   @media (--bp-med) {
     padding: 20px;
@@ -17,7 +17,10 @@
 }
 
 .inner {
-  max-width: 550px;
+  max-width: 500px;
+  padding: 30px;
+  background-color: #fff;
+  margin: 0 auto; 
 }
 
 .full {
@@ -40,6 +43,12 @@
   @media (--bp-med) {
     text-align: left;
   }
+}
+
+.bgcolorwrap {
+  background-color: rgba(0,0,0,.5);
+  padding: 100px 0 0 0;
+  height: calc(100vh - 170px);
 }
 
 /* Languages
