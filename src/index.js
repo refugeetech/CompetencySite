@@ -32,10 +32,6 @@ ReactDOM.render((
     <Route component={App} path="/">
       <IndexRoute component={Start} />
       <Route component={About} path="/about" />
-    </Route>
-
-    <Route component={Treemap} path="/">
-      <IndexRoute component={Start} />
       <Route component={Treemap} path="/treemap" />
     </Route>
 
