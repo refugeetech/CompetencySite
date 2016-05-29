@@ -33,7 +33,7 @@ ReactDOM.render((
     <Route component={App} path="/">
       <IndexRoute component={Start} />
       <Route component={About} path="/about" />
-
+    </Route>
     <Route
       component={App}
       onEnter={nextState => {
