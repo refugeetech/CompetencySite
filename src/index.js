@@ -15,6 +15,7 @@ import App from './views/App'
 import About from './views/About'
 import NotFound from './views/NotFound'
 import Start from './views/Start'
+import Treemap from './views/Treemap'
 
 function redirect (url) {
   window.location = url
@@ -31,6 +32,11 @@ ReactDOM.render((
     <Route component={App} path="/">
       <IndexRoute component={Start} />
       <Route component={About} path="/about" />
+    </Route>
+
+    <Route component={Treemap} path="/">
+      <IndexRoute component={Start} />
+      <Route component={Treemap} path="/treemap" />
     </Route>
 
     <Route
