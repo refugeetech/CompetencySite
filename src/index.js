@@ -10,6 +10,7 @@ import {
 
 import useScroll from 'react-router-scroll'
 import LanguageActions from './actions/LanguageActions'
+import QueryActions from './actions/QueryActions'
 
 import App from './views/App'
 import About from './views/About'
@@ -39,6 +40,13 @@ ReactDOM.render((
         LanguageActions.setLanguage(nextState.params.language)
       }}
       path="/lang/:language" />
+
+    <Route
+      component={App}
+      onEnter={nextState => {
+        QueryActions.setQuery(nextState.params.query)
+      }}
+      path="/visualization/:query" />
 
     <Route onEnter={redirect.bind(this, 'http://app.competency.se')} path="register" />
     <Route component={NotFound} path="*" />
