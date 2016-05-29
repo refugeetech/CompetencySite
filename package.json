@@ -67,6 +67,7 @@
     "history": "^2.1.1",
     "postcss": "^5.0.14",
     "postcss-custom-media": "^5.0.1",
+    "q": "^1.4.1",
     "react": "^15.1.0",
     "react-addons-shallow-compare": "^15.1.0",
     "react-css-modules": "^3.6.0",
