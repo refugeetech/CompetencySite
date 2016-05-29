@@ -14,9 +14,20 @@ export class ReactTreemap extends Component {
     this._setState = this._setState.bind(this)
   }
 
+  getLink (title) {
+    let href = `/visualization/${title}`
+    return (<a href={href}>{title}</a>)
+  }
+
   componentDidMount () {
     get(`http://competency-api-develop.competency.e176268b.svc.dockerapp.io:4001/visualization?q=${this.props.query}`)
-      .then((data) => this._setState(data))
+      .then((data) => data.map(x => {
+        x.title = this.getLink(x.title)
+        return x
+      }))
+      .then((data) => {
+        this._setState(data)
+      })
   }
 
   _setState (d) {
