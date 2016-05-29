@@ -23,11 +23,9 @@ export const Splash = () =>
           href="http://app.competency.se"
           text={LanguageStore.define('buttonTellAboutYourself')} />
         <ButtonLink
-          href="http://app.competency.se"
+          href="http://bl.ocks.org/cggaurav/raw/12abf0d51111407a1ae7c8a89b1926c4"
           text={LanguageStore.define('buttonEmployee')} />
       </div>
-   
-
     </Content>
   </div>
 
