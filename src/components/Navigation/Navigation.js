@@ -16,8 +16,8 @@ export const Navigation = ({ right, white }) => {
       to: 'about'
     },
     {
-      title: 'treemap',
-      to: 'treemap'
+      title: LanguageStore.define('treeMap'),
+      to: 'treeMap'
     }
   ]
 

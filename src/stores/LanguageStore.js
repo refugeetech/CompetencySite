@@ -19,7 +19,8 @@ class LanguageStore {
         'buttonEmployee': 'Jag är arbetsgivare',
         'registeredPeople': 'قبل, في أما:',
         'register': 'ف',
-        'aboutUs': 'لأوروبيّون'
+        'aboutUs': 'لأوروبيّون',
+        'treeMap': 'نمودار'
       },
       fa: {
         title: 'پزشک',
@@ -28,7 +29,8 @@ class LanguageStore {
         'buttonEmployee': 'Jag är arbetsgivare',
         'registeredPeople': 'لورم ایپسوم متن:',
         'register': 'لورم',
-        'aboutUs': 'لورم ایپسوم'
+        'aboutUs': 'لورم ایپسوم',
+        'treeMap': 'Competence Visualization'
       },
       sv: {
         'title': 'Låt jobben hitta dig istället',
@@ -37,7 +39,8 @@ class LanguageStore {
         'buttonEmployee': 'Jag är arbetsgivare',
         'registeredPeople': 'Registrerade personer:',
         'register': 'Registrera',
-        'aboutUs': 'Om oss'
+        'aboutUs': 'Om oss',
+        'treeMap': 'Interaktivt filter'
       },
       en: {
         'title': 'Let the jobs find you instead',
@@ -46,7 +49,8 @@ class LanguageStore {
         'buttonEmployee': 'Jag är arbetsgivare',
         'registeredPeople': 'Registered people:',
         'register': 'Register',
-        'aboutUs': 'About us'
+        'aboutUs': 'About us',
+        'treeMap': 'Competence Visualization'
       }
     }
   }
