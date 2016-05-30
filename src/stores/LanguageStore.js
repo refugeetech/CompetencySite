@@ -71,7 +71,7 @@ class LanguageStore {
 
   setLanguage (language) {
     if (!this.defs[language]) {
-      this.language = 'en'
+      this.language = 'sv'
       return
     }
 
