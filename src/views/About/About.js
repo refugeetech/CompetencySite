@@ -20,7 +20,7 @@ export const About = () =>
       <h1>Live statistics</h1>
       <iframe
         height="600"
-        src="http://kibana.competency.se/app/kibana#/visualize/edit/Number-of-replies?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-7d,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(customInterval:'2h',extended_bounds:(),field:timestampCreated,interval:auto,min_doc_count:1),schema:segment,type:date_histogram),(id:'3',params:(field:languages.English),schema:metric,type:avg)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,drawLinesBetweenPoints:!t,interpolate:linear,radiusRatio:9,scale:linear,setYExtents:!f,shareYAxis:!t,showCircles:!t,smoothLines:!f,times:!(),yAxis:()),title:'Number%20of%20replies',type:line))"
+        src="<iframe src="http://kibana.competency.se/app/kibana#/visualize/edit/Number-of-replies?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-7d,mode:quick,to:now))&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),uiState:(),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(field:occupations.name,order:desc,orderBy:'1',size:16),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTooltip:!t,isDonut:!f,shareYAxis:!t),title:Number-of-replies,type:pie))" height="600" width="800"></iframe>"
         styleName="graph"
         width="800"></iframe>
       <iframe
