@@ -33,8 +33,8 @@ class LanguageStore {
         'treeMap': 'Visualization'
       },
       sv: {
-        'title': 'Låt jobben hitta dig istället',
-        'intro': 'Som nyanländ tar det tid innan du kan börja jobba. Genom att dela din nuvarande arbetsstatus och dina kompetenser även innan du har ett personnummer kan potentiella arbetsgivare få koll på att du finns och erbjuda praktikplatser.',
+        'title': 'Hjälp oss visa bredden av kompetenser hos migranter',
+        'intro': 'Vi har en stor utmaning med att sysselsätta alla nyanlända med meningsfulla uppgifter men vi måste börja med att förstå deras kompetenser och inse att de är individer precis som resten av vårt samhälle. Vi har på frivillig tid skapat en enkel tjänst för att samla in nyanländas kompetenser och kommer visualisera detta och vi lovar att återkomma med resultat till dig och journalister om en vecka när vi fått 1000 personer att registrera sig. Hjälp oss att nå vårt mål genom att be alla migranter registrera sin profil här nedan. Du kan även skicka länken http://app.competency.se som går direkt till registreringssidan som även finns översatt till flera språk.',
         'buttonTellAboutYourself': 'Jag söker jobb',
         'buttonEmployee': 'Jag är arbetsgivare',
         'registeredPeople': 'Registrerade personer:',
@@ -45,8 +45,8 @@ class LanguageStore {
       en: {
         'title': 'Let the jobs find you instead',
         'intro': 'Som nyanländ tar det tid innan du kan börja jobba. Genom att dela din nuvarande arbetsstatus och dina kompetenser även innan du har ett personnummer kan potentiella arbetsgivare få koll på att du finns och erbjuda praktikplatser.',
-        'buttonTellAboutYourself': 'Tell us about you',
-        'buttonEmployee': 'Jag är arbetsgivare',
+        'buttonTellAboutYourself': 'I\'m looking for job',
+        'buttonEmployee': 'Employers (coming soon)',
         'registeredPeople': 'Registered people:',
         'register': 'Register',
         'aboutUs': 'About us',
@@ -71,7 +71,7 @@ class LanguageStore {
 
   setLanguage (language) {
     if (!this.defs[language]) {
-      this.language = 'sv'
+      this.language = 'en'
       return
     }
 
