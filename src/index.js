@@ -38,22 +38,21 @@ ReactDOM.render((
         onEnter={nextState => {
           LanguageActions.setLanguage(nextState.params.language)
         }}
-        path=":language" />
-    </Route>
-    <Route
-      component={Treemap}
-      onEnter={nextState => {
-        QueryActions.setQuery(nextState.params.query)
-      }}
-      path="/visualization">
+        path="/lang/:language" />
       <Route
-      component={Treemap}
-      onEnter={nextState => {
-        QueryActions.setQuery(nextState.params.query)
-      }}
-      path="/visualization/:query"/>
+        component={Treemap}
+        onEnter={nextState => {
+          QueryActions.setQuery(nextState.params.query)
+        }}
+        path="/visualization">
+      <Route
+        component={Treemap}
+        onEnter={nextState => {
+          QueryActions.setQuery(nextState.params.query)
+        }}
+        path="/visualization/:query"/>
     </Route>
-
+  </Route>
     <Route onEnter={redirect.bind(this, 'http://app.competency.se')} path="register" />
     <Route component={NotFound} path="*" />
   </Router>
