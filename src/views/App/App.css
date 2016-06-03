@@ -28,6 +28,15 @@
     margin: 0;
   }
 
+  a {
+    color: var(--color-seance);
+
+    &:visited,
+    &:active {
+      color: var(--color-seance);
+    }
+  }
+
   p {
     font-size: 18px;
     line-height: 22px;

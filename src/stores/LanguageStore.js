@@ -33,14 +33,14 @@ class LanguageStore {
         'treeMap': 'Visualization'
       },
       sv: {
-        'title': 'Hjälp oss visa bredden av kompetenser hos migranter',
-        'intro': 'Vi har en stor utmaning med att sysselsätta alla nyanlända med meningsfulla uppgifter men vi måste börja med att förstå deras kompetenser och inse att de är individer precis som resten av vårt samhälle. Vi har på frivillig tid skapat en enkel tjänst för att samla in nyanländas kompetenser och kommer visualisera detta och vi lovar att återkomma med resultat till dig och journalister om en vecka när vi fått 1000 personer att registrera sig. Hjälp oss att nå vårt mål genom att be alla migranter registrera sin profil här nedan. Du kan även skicka länken http://app.competency.se som går direkt till registreringssidan som även finns översatt till flera språk.',
+        'title': 'Vi visar bredden av kompetenser hos migranter',
+        'intro': 'Vårt mål är att sysselsätta alla nyanlända med meningsfulla uppgifter genom att utgå ifrån deras kompetenser. Här är en enkel tjänst för att samla in nyanländas kompetenser. Vi kommer visualisera detta och återkommer med resultat när vi fått 1000 personer att registrera sig. Sprid detta och be alla migranter registrera sin profil här nedan. Du kan även skicka länken http://app.competency.se som går direkt till registreringssidan som även finns översatt till flera språk.',
         'buttonTellAboutYourself': 'Jag söker jobb',
         'buttonEmployee': 'Jag är arbetsgivare',
         'registeredPeople': 'Registrerade personer:',
         'register': 'Registrera',
         'aboutUs': 'Om oss',
-        'treeMap': 'Visualisera'
+        'treeMap': 'Diagram & statistik'
       },
       en: {
         'title': 'Let the jobs find you instead',

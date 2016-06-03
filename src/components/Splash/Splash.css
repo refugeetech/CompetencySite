@@ -17,17 +17,11 @@
   }
 }
 
-.text {
+.text p {
   color: var(--color-outer-space);
   letter-spacing: 0.002em;
   line-height: 1.5;
   text-align: center;
-}
-
-.header {
-  background-color: #f8f8f8;
-  text-align: center;
-  margin: -30px -30px 30px;
 }
 
 .logo {
@@ -36,7 +30,7 @@
 
 .buttoncontainer {
   text-align: center;
-  margin: 20px auto; 
+  margin: 20px auto;
   a:first-child {
     margin-right: 60px;
   }

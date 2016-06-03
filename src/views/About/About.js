@@ -2,19 +2,12 @@ import React from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './About.css'
 import isPhone from '../../helpers/isPhone'
+import Markdown2HTML from 'react-markdown-to-html'
 
 export const About = () =>
   <div>
     <div styleName="content">
-      <h1>Our goal</h1>
-
-      <h2>We want to speed up the integration process for all refugees by visualizing the talent</h2>
-
-      <p><em>Platform for asylum seekers</em> where they can register their competency and their contact information. The service will be available in multiple languages. </p>
-
-      <p><em>Platform for employers</em> where they very easily can see what available competency there is available in their area. There will also be an easy way of contacting multiple people with job offerings and internships. The visualizations will show the general public and authorities how diverse the group of asylum seekers really are and hopefully more will understand that we shouldn't only talk about the cost of integration but also what opportunities that are open for those who start seeing this potential.</p>
-
-       <p>By shortening the time from arrival to getting a job is a hugely beneficial task for us. Every day we can save have tripple effect in cost savings, tax income, social and humanitarian perspectives. Our government organisations are struggling to keep up and have difficulties to coordinate an effective process so we want to help by creating a new way to short-circuit the whole process by exposing everyone interested in an internship or job as soon as they have a LMA-card (temporary working permit).</p>
+      <Markdown2HTML src="/static/markdown/about.md" />
     </div>
     {!isPhone() && <div styleName="content">
       <h1>Live statistics</h1>
@@ -27,19 +20,7 @@ export const About = () =>
     </div>}
 
     <div styleName="content">
-      <h1>Background</h1>
-      <p><em>Disclaimer</em> This project is the result of a process led by Refugee Tech and initially created on a weekend
-      Kodapor X Hackathon in February 2016. The team consists mainly of developers with no or little knowledge of the migration process in detail, therefore there might be a lot of things we miss - have misunderstood or underestimated. We have the ambition to make the project sustainable by itself in the future and for both reasons we need all the help we can get to get the project as accurate and successfull as possible. Please contact us if you have any input or feedback. </p>
-
-      <h2>The team</h2>
-      <p>Christian Landgren, CEO, Iteam</p>
-      <p>Alexander Czigler, Developer, Iteam</p>
-      <p>Nilla Juvas, Designer, Freelancer</p>
-      <p>Amir Rahnama, Developer, Iteam</p>
-      <p>Radu Achim, Developer, Iteam</p>
-      <p>Daniel Eriksson, Developer, Bukowskis</p>
-      <p>Karin Werner, Digital Manager, Taxi Stockholm</p>
-      <p>Rickard Laurin, Developer, Iteam</p>
+      <Markdown2HTML src="/static/markdown/background.md" />
     </div>
   </div>
 
