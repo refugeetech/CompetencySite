@@ -6,12 +6,10 @@ describe('List', () => {
 
   beforeEach(() => {
     component = shallow(
-      <List items={[
-          {
-            content: 'stuff',
-            title: 'test'
-          }
-        ]} />
+      <List items={[{
+        content: 'stuff',
+        title: 'test'
+      }]} />
     )
   })
 
