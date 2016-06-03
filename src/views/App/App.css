@@ -6,7 +6,7 @@
 @import "styles/sizes";
 
 /* App
---------------------------------------------------*/
+-------------------------------------------------- */
 .app {
   display: flex;
   flex-direction: column;
@@ -14,9 +14,10 @@
 }
 
 /* Globals
---------------------------------------------------*/
+-------------------------------------------------- */
 :global {
-  html, body {
+  html,
+  body {
     height: 100%;
   }
 
@@ -30,16 +31,13 @@
 
   a {
     color: var(--color-seance);
-
-    &:visited,
-    &:active {
-      color: var(--color-seance);
-    }
   }
 
   p {
+    color: var(--color-outer-space);
     font-size: 18px;
-    line-height: 22px;
+    letter-spacing: 0.002em;
+    line-height: 1.5;
   }
 
   em {

@@ -6,10 +6,10 @@
 @import "styles/sizes";
 
 .title {
-  color: #000;
+  color: var(--color-black);
   font-size: 20px;
+  margin-bottom: var(--spacing-medium);
   text-align: center;
-  margin-bottom: 20px;
 
   @media (--bp-med) {
     font-size: 40px;
@@ -18,9 +18,6 @@
 }
 
 .text p {
-  color: var(--color-outer-space);
-  letter-spacing: 0.002em;
-  line-height: 1.5;
   text-align: center;
 }
 
@@ -29,9 +26,10 @@
 }
 
 .buttoncontainer {
-  text-align: center;
-  margin: 20px auto;
-  a:first-child {
-    margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (--bp-med) {
+    flex-direction: column;
   }
 }

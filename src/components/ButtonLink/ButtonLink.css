@@ -9,7 +9,7 @@
   background: var(--color-seance);
   border: 1px solid var(--color-seance);
   border-radius: 50px;
-  color: var(--color-white);
+  color: var(--color-white) !important;
   display: inline-block;
   font-size: 18px;
   margin-top: 10px;

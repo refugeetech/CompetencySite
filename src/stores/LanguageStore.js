@@ -44,9 +44,9 @@ class LanguageStore {
       },
       en: {
         'title': 'Let the jobs find you instead',
-        'intro': 'Som nyanländ tar det tid innan du kan börja jobba. Genom att dela din nuvarande arbetsstatus och dina kompetenser även innan du har ett personnummer kan potentiella arbetsgivare få koll på att du finns och erbjuda praktikplatser.',
-        'buttonTellAboutYourself': 'I\'m looking for job',
-        'buttonEmployee': 'Employers (coming soon)',
+        'intro': 'When recently arrived it takes time before you can start working. Sharing your current work status and competencies, even before you have recieved a social security number, will give potential employers an insight and opportunity to offer trainee jobs.',
+        'buttonTellAboutYourself': 'I\'m looking for a job',
+        'buttonEmployee': 'Employers (demo)',
         'registeredPeople': 'Registered people:',
         'register': 'Register',
         'aboutUs': 'About us',

@@ -33,14 +33,13 @@ ReactDOM.render((
     <Route component={App} path="/">
       <IndexRoute component={Start} />
       <Route component={About} path="/about" />
+      <Route
+        component={Start}
+        onEnter={nextState => {
+          LanguageActions.setLanguage(nextState.params.language)
+        }}
+        path="/lang/:language" />
     </Route>
-    <Route
-      component={App}
-      onEnter={nextState => {
-        LanguageActions.setLanguage(nextState.params.language)
-      }}
-      path="/lang/:language" />
-
     <Route
       component={Treemap}
       onEnter={nextState => {
