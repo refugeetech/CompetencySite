@@ -15,6 +15,7 @@
   position: relative;
 
   @media (--bp-med) {
+    height: auto;
     padding: 20px;
   }
 }
