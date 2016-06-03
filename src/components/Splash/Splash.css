@@ -23,6 +23,7 @@
 
 .buttoncontainer {
   display: flex;
+  justify-content: center;
 
   > a:first-child {
     margin-right: var(--spacing-medium);

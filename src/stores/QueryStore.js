@@ -6,6 +6,8 @@ class QueryStore {
     this.bindListeners({
       setQuery: QueryActions.setQuery
     })
+
+    this.query = ''
   }
 
   static currentQuery () {

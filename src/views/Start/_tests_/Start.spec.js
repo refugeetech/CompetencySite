@@ -13,4 +13,12 @@ describe('Start', () => {
   it('should render', () => {
     expect(component.type()).to.eql('div')
   })
+
+  it('should have a styleName', () => {
+    expect(component).to.have.prop('styleName', 'content')
+  })
+
+  it('should render a Splash', () => {
+    expect(component.find('Splash')).to.exist
+  })
 })
