@@ -38,7 +38,7 @@ ReactDOM.render((
         onEnter={nextState => {
           LanguageActions.setLanguage(nextState.params.language)
         }}
-        path="/lang/:language" />
+        path=":language" />
     </Route>
     <Route
       component={Treemap}
