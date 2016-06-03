@@ -4,7 +4,7 @@ import marked from 'marked'
 import styles from './Splash.css'
 import Content from '../Content/Content'
 import ButtonLink from '../ButtonLink/ButtonLink'
-import LanguageStore from '../../stores/LanguageStore.js'
+import LanguageStore from '../../stores/LanguageStore'
 
 export const Splash = () =>
   <div className="container">
@@ -13,14 +13,13 @@ export const Splash = () =>
       flex="2"
       left>
       <div>
-        <img src="/static/images/logo.png" styleName="logo" />
+        <img src="/static/images/logo_flush.png" styleName="logo" />
       </div>
       <h1 styleName="title">{LanguageStore.define('title')}</h1>
       <div
         dangerouslySetInnerHTML={{
           __html: marked(LanguageStore.define('intro'))
-        }}
-        styleName="text" />
+        }} />
       <div styleName="buttoncontainer">
         <ButtonLink
           href="http://app.competency.se"
