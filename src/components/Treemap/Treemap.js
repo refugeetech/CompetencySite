@@ -16,7 +16,7 @@ export class ReactTreemap extends Component {
 
   componentDidMount () {
     get(`http://api.competency.se/visualization?q=${this.props.query}`)
-      .then((data) => this._setState(data))
+      .then(data => this._setState(data))
   }
 
   _setState (d) {
