@@ -36,7 +36,7 @@ class LanguageStore {
         'title': 'Vi visar bredden av kompetenser hos migranter',
         'intro': 'Vårt mål är att sysselsätta alla nyanlända med meningsfulla uppgifter genom att utgå ifrån deras kompetenser. Här är en enkel tjänst för att samla in nyanländas kompetenser. Vi kommer visualisera detta och återkommer med resultat när vi fått 1000 personer att registrera sig. Sprid detta och be alla migranter registrera sin profil här nedan. Du kan även skicka länken http://app.competency.se som går direkt till registreringssidan som även finns översatt till flera språk.',
         'buttonTellAboutYourself': 'Jag söker jobb',
-        'buttonEmployee': 'Jag är arbetsgivare',
+        'buttonEmployee': 'Jag är arbetsgivare (demo)',
         'registeredPeople': 'Registrerade personer:',
         'register': 'Registrera',
         'aboutUs': 'Om oss',
