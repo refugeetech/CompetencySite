@@ -16,6 +16,10 @@
   }
 }
 
+.text p {
+  text-align: left;
+}
+
 .logo {
   margin-bottom: var(--spacing-medium);
   max-width: 40%;

@@ -19,7 +19,8 @@ export const Splash = () =>
       <div
         dangerouslySetInnerHTML={{
           __html: marked(LanguageStore.define('intro'))
-        }} />
+        }}
+        styleName="text" />
       <div styleName="buttoncontainer">
         <ButtonLink
           href="http://app.competency.se"
