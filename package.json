@@ -64,6 +64,7 @@
     "d3-react": "^1.0.4",
     "formsy-react": "^0.18.0",
     "formsy-react-components": "^0.7.1",
+    "gulp-localeapp": "^1.2.0",
     "history": "^2.1.1",
     "marked": "^0.3.5",
     "postcss": "^5.0.14",
