@@ -27,7 +27,7 @@ export const Splash = () =>
           text={LanguageStore.define('buttonTellAboutYourself')} />
         <ButtonLink
           href="http://bl.ocks.org/cggaurav/raw/12abf0d51111407a1ae7c8a89b1926c4"
-          text={LanguageStore.define('buttonEmployee')} />
+          text={LanguageStore.define('buttonEmployer')} />
       </div>
     </Content>
   </div>

@@ -9,7 +9,8 @@ describe('Navigation', () => {
   beforeEach(() => {
     LanguageStore = {
       default: {
-        define: sinon.stub()
+        define: sinon.stub(),
+        getLanguages: sinon.stub()
       }
     }
 
@@ -17,6 +18,8 @@ describe('Navigation', () => {
     LanguageStore.default.define.withArgs('register').returns('register')
     LanguageStore.default.define.withArgs('aboutUs').returns('aboutUs')
     LanguageStore.default.define.withArgs('treeMap').returns('treeMap')
+    LanguageStore.default.define.withArgs('languageName_en').returns('English')
+    LanguageStore.default.getLanguages.returns([])
 
     Navigation = proxyquire('../Navigation', {
       '../../stores/LanguageStore': LanguageStore
@@ -67,4 +70,16 @@ describe('Navigation', () => {
     expect(link).to.have.prop('to', 'visualization')
     expect(link.children().text()).to.eql('treeMap')
   })
+
+  it('should render language links', () => {
+    LanguageStore.default.getLanguages.returns(['sv', 'en'])
+    component = shallow(
+      <Navigation />
+    )
+    const link = component.find('Link').last()
+    expect(link.children().text()).to.eql('English')
+    expect(link).to.have.prop('to', '/lang/en')
+
+  });
+
 })

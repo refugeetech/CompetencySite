@@ -1,4 +1,14 @@
 {
-  "employee_button_text": "Jag söker jobb",
-  "title": "Låt jobben hitta dig istället"
+  "aboutUs": "Om oss",
+  "buttonEmployer": "Jag är arbetsgivare (demo)",
+  "buttonTellAboutYourself": "Jag söker jobb",
+  "intro": "Vårt mål är att sysselsätta alla nyanlända med meningsfulla uppgifter genom att utgå ifrån deras kompetenser. Här är en enkel tjänst för att samla in nyanländas kompetenser.\n\nVi kommer visualisera detta och återkommer med resultat när vi fått 1000 personer att registrera sig. Sprid detta och be alla migranter registrera sin profil här nedan. Du kan även skicka länken http://app.competency.se som går direkt till registreringssidan som även finns översatt till flera språk.",
+  "languageName_ar": "Arabiska",
+  "languageName_en": "English",
+  "languageName_fa": "Persiska",
+  "languageName_sv": "Svenska",
+  "register": null,
+  "registeredPeople": null,
+  "title": "Vi visar bredden av kompetenser hos migranter",
+  "treeMap": null
 }

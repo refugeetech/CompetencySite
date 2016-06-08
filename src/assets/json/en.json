@@ -1,4 +1,14 @@
 {
-  "employee_button_text": "I'm looking for job",
-  "title": "Let the jobs find you instead"
+  "aboutUs": "About us",
+  "buttonEmployer": "Employers (demo)",
+  "buttonTellAboutYourself": "I'm looking for job",
+  "intro": "When recently arrived it takes time before you can start working. Sharing your current work status and competencies, even before you have recieved a social security number, will give potential employers an insight and opportunity to offer trainee jobs.",
+  "languageName_ar": "Arabic",
+  "languageName_en": "English",
+  "languageName_fa": "Persian",
+  "languageName_sv": "Swedish",
+  "register": null,
+  "registeredPeople": null,
+  "title": "Let the jobs find you instead",
+  "treeMap": null
 }

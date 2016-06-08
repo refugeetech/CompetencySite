@@ -17,7 +17,7 @@ describe('Splash', () => {
     LanguageStore.default.define.withArgs('title').returns('title')
     LanguageStore.default.define.withArgs('intro').returns('intro')
     LanguageStore.default.define.withArgs('buttonTellAboutYourself').returns('buttonAbout')
-    LanguageStore.default.define.withArgs('buttonEmployee').returns('buttonEmployee')
+    LanguageStore.default.define.withArgs('buttonEmployer').returns('buttonEmployer')
 
     Splash = proxyquire('../Splash', {
       '../../stores/LanguageStore': LanguageStore
@@ -85,6 +85,6 @@ describe('Splash', () => {
     expect(parent).to.have.prop('styleName', 'buttoncontainer')
 
     expect(button).to.have.prop('href', 'http://bl.ocks.org/cggaurav/raw/12abf0d51111407a1ae7c8a89b1926c4')
-    expect(button).to.have.prop('text', 'buttonEmployee')
+    expect(button).to.have.prop('text', 'buttonEmployer')
   })
 })
