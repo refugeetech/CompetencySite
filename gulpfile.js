@@ -24,6 +24,11 @@ gulp.task('default', [
   'watch'
 ])
 
+gulp.task('build', [
+  'localeapp',
+  'mocha'
+])
+
 gulp.task('localeapp', function (done) {
   return localeapp({apiKey: 'gslU5kQVPHc77t1Vy6e3ibKQhO9F7Q096pczZyGfIz80uNv9dd'})
     .pipe(gulp.dest('src/assets/json/'))
