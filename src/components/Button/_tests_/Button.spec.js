@@ -14,14 +14,12 @@ describe('Button', () => {
     expect(component.type()).to.eql('button')
   })
 
-  it('should render with type submit', function () {
+  it('should render with type submit', () => {
     expect(component).to.have.prop('type', 'submit')
   })
 
-  it('should render with provided type', function () {
-    component.setProps({
-      type: 'button'
-    })
+  it('should render with provided type', () => {
+    component.setProps({ type: 'button' })
 
     expect(component).to.have.prop('type', 'button')
   })
@@ -30,7 +28,7 @@ describe('Button', () => {
     expect(component).to.have.prop('styleName', 'button')
   })
 
-  it('should render a text', function () {
+  it('should render a text', () => {
     expect(component).to.have.prop('children', 'Skicka')
   })
 })

@@ -6,38 +6,38 @@
 @import "styles/sizes";
 
 .title {
-  color: #000;
+  color: var(--color-black);
   font-size: 20px;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-medium);
 
   @media (--bp-med) {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.2;
   }
 }
 
-.text {
-  color: var(--color-outer-space);
-  letter-spacing: 0.002em;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.header {
-  background-color: #f8f8f8;
-  text-align: center;
-  margin: -30px -30px 30px;
+.text p {
+  text-align: left;
 }
 
 .logo {
-  max-width: 50%;
+  margin-bottom: var(--spacing-medium);
+  max-width: 40%;
 }
 
 .buttoncontainer {
-  text-align: center;
-  margin: 20px auto; 
-  a:first-child {
-    margin-right: 60px;
+  display: flex;
+  justify-content: center;
+
+  > a:first-child {
+    margin-right: var(--spacing-medium);
+
+    @media (--bp-med) {
+      margin-right: 0;
+    }
+  }
+
+  @media (--bp-med) {
+    flex-direction: column;
   }
 }

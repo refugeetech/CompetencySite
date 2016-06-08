@@ -47,18 +47,15 @@ module.exports = {
     })
   ],
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      }
-    ],
     loaders: [
       {
         test: /\.js$/,
         loader: 'happypack/loader',
         include: path.join(__dirname, 'src')
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       },
       {
         test: /\.css$/,

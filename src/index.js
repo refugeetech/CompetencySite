@@ -33,28 +33,26 @@ ReactDOM.render((
     <Route component={App} path="/">
       <IndexRoute component={Start} />
       <Route component={About} path="/about" />
-    </Route>
-    <Route
-      component={App}
-      onEnter={nextState => {
-        LanguageActions.setLanguage(nextState.params.language)
-      }}
-      path="/lang/:language" />
-
-    <Route
-      component={Treemap}
-      onEnter={nextState => {
-        QueryActions.setQuery(nextState.params.query)
-      }}
-      path="/visualization">
       <Route
-      component={Treemap}
-      onEnter={nextState => {
-        QueryActions.setQuery(nextState.params.query)
-      }}
-      path="/visualization/:query"/>
+        component={Start}
+        onEnter={nextState => {
+          LanguageActions.setLanguage(nextState.params.language)
+        }}
+        path="/lang/:language" />
+      <Route
+        component={Treemap}
+        onEnter={nextState => {
+          QueryActions.setQuery(nextState.params.query)
+        }}
+        path="/visualization">
+      <Route
+        component={Treemap}
+        onEnter={nextState => {
+          QueryActions.setQuery(nextState.params.query)
+        }}
+        path="/visualization/:query"/>
     </Route>
-
+  </Route>
     <Route onEnter={redirect.bind(this, 'http://app.competency.se')} path="register" />
     <Route component={NotFound} path="*" />
   </Router>

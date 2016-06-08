@@ -3,7 +3,7 @@ import CSSModules from 'react-css-modules'
 import styles from './Navigation.css'
 import { IndexLink, Link } from 'react-router'
 import classNames from 'classnames'
-import LanguageStore from '../../stores/LanguageStore.js'
+import LanguageStore from '../../stores/LanguageStore'
 
 export const Navigation = ({ right, white }) => {
   const links = [
@@ -17,9 +17,12 @@ export const Navigation = ({ right, white }) => {
     },
     {
       title: LanguageStore.define('treeMap'),
-      to: 'treeMap'
+      to: 'visualization'
     }
-  ]
+  ].concat(LanguageStore.getLanguages().map(key => ({
+    title: LanguageStore.define(`languageName_${key}`),
+    to: `/lang/${key}`
+  })))
 
   const styleNames = classNames('navigation', {
     right: right,

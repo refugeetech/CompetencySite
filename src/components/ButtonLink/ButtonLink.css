@@ -6,9 +6,10 @@
 @import "styles/sizes";
 
 .button {
-  border: 1px solid var(--color-purple);
-  color: var(--color-white);
-  background: var(--color-purple);
+  background: var(--color-seance);
+  border: 1px solid var(--color-seance);
+  border-radius: 50px;
+  color: var(--color-white) !important;
   display: inline-block;
   font-size: 18px;
   margin-top: 10px;
@@ -16,7 +17,6 @@
   text-align: center;
   text-decoration: none;
   transition: all 200ms ease-in-out;
-  border-radius: 50px;
 
   &:hover {
     border: 1px solid var(--color-white);

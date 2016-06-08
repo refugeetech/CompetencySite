@@ -28,10 +28,8 @@ export const Content = (props) => {
         flex: flex
       }}
       styleName={styleNames}>
-      <div styleName="bgcolorwrap">
-        <div styleName="inner">
-          {children}
-        </div>
+      <div styleName="inner">
+        {children}
       </div>
     </div>
   )
