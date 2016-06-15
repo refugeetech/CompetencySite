@@ -6,6 +6,9 @@ import LanguageActions from '../../actions/LanguageActions'
 
 export const LanguageSelector = ({ language, languages }) => {
   const currentLanguage = languages[language]
+
+  if (!currentLanguage) { return null }
+
   const options = Object.keys(currentLanguage)
     .filter(def => def.indexOf('languageName') > -1)
     .map(def => {
@@ -24,8 +27,8 @@ export const LanguageSelector = ({ language, languages }) => {
 }
 
 LanguageSelector.propTypes = {
-  defs: PropTypes.shape({}),
-  language: PropTypes.string
+  language: PropTypes.string,
+  languages: PropTypes.shape({})
 }
 
 export default CSSModules(LanguageSelector, styles)

@@ -46,7 +46,7 @@ class LanguageStore {
       return false
     }
 
-    const newLanguage = language.split('_')[1]
+    const newLanguage = language.indexOf('_') > -1 ? language.split('_')[1] : language
 
     if (!this.languages[newLanguage]) {
       this.language = 'sv'

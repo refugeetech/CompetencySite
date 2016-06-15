@@ -70,16 +70,4 @@ describe('Navigation', () => {
     expect(link).to.have.prop('to', 'visualization')
     expect(link.children().text()).to.eql('treeMap')
   })
-
-  it('should render language links', () => {
-    LanguageStore.default.getLanguages.returns(['sv', 'en'])
-    component = shallow(
-      <Navigation />
-    )
-    const link = component.find('Link').last()
-    expect(link.children().text()).to.eql('English')
-    expect(link).to.have.prop('to', '/lang/en')
-
-  });
-
 })

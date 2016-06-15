@@ -6,7 +6,7 @@ describe('App', () => {
 
   beforeEach(() => {
     component = shallow(
-      <App>
+      <App language="en">
         <div>Hej</div>
       </App>
     )

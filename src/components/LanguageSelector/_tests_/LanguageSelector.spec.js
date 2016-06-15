@@ -7,13 +7,19 @@ describe('LanguageSelector', () => {
 
   beforeEach(() => {
     component = shallow(
-      <LanguageSelector />
+      <LanguageSelector
+        language="sv"
+        languages={{
+          sv: {
+            test: 'test'
+          }
+        }} />
     )
 
     instance = component.instance()
   })
 
   it('should render', () => {
-    expect(component.type()).to.eql('div')
+    expect(component.type().displayName).to.eql('Select')
   })
 })

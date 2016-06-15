@@ -22,8 +22,8 @@ describe('LanguageContainer', () => {
   })
 
   it('should render the component with props', () => {
-    const Language = component.find('Language')
+    const LanguageSelector = component.find('LanguageSelector')
 
-    expect(Language).to.have.prop('test', 'test')
+    expect(LanguageSelector).to.have.prop('test', 'test')
   })
 })

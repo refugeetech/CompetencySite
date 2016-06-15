@@ -25,16 +25,22 @@ describe('LanguageStore', () => {
     ])
   })
 
-  it('should set intial state', () => {
+  it('should set initial state', () => {
     expect(getState('language')).to.eql('sv')
 
-    expect(getState('defs').ar).to.be.an('object')
-    expect(getState('defs').fa).to.be.an('object')
-    expect(getState('defs').en).to.be.an('object')
-    expect(getState('defs').sv).to.be.an('object')
+    expect(getState('languages').ar).to.be.an('object')
+    expect(getState('languages').fa).to.be.an('object')
+    expect(getState('languages').en).to.be.an('object')
+    expect(getState('languages').sv).to.be.an('object')
   })
 
   describe('#setLanguage', () => {
+    it('should not do anything if language is null or undefined', () => {
+      dispatch.send('set_language', null)
+
+      expect(getState('language')).to.eql('sv')
+    })
+
     it('should set language', () => {
       dispatch.send('set_language', 'en')
 

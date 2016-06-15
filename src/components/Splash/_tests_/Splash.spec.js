@@ -1,30 +1,20 @@
 import React from 'react'
 import proxyquire from 'proxyquire'
+import { Splash } from '../Splash'
 
 describe('Splash', () => {
   let component
-  let LanguageStore
-  let Splash
 
   beforeEach(() => {
-    LanguageStore = {
-      default: {
-        define: sinon.stub()
-      }
-    }
-
-    /* Mocked language store */
-    LanguageStore.default.define.withArgs('title').returns('title')
-    LanguageStore.default.define.withArgs('intro').returns('intro')
-    LanguageStore.default.define.withArgs('buttonTellAboutYourself').returns('buttonAbout')
-    LanguageStore.default.define.withArgs('buttonEmployer').returns('buttonEmployer')
-
-    Splash = proxyquire('../Splash', {
-      '../../stores/LanguageStore': LanguageStore
-    }).Splash
-
     component = shallow(
-      <Splash />
+      <Splash language="sv" languages={{
+        sv: {
+          intro: 'intro',
+          title: 'title',
+          buttonTellAboutYourself: 'buttonAbout',
+          buttonEmployer: 'buttonEmployer'
+        }
+      }} />
     )
   })
 

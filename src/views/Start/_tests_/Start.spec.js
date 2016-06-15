@@ -19,6 +19,6 @@ describe('Start', () => {
   })
 
   it('should render a Splash', () => {
-    expect(component.find('Splash')).to.exist
+    expect(component.find('SplashContainer')).to.exist
   })
 })
