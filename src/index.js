@@ -12,7 +12,7 @@ import useScroll from 'react-router-scroll'
 import LanguageActions from './actions/LanguageActions'
 import QueryActions from './actions/QueryActions'
 
-import App from './views/App'
+import AppContainer from './views/App/AppContainer'
 import About from './views/About'
 import NotFound from './views/NotFound'
 import Start from './views/Start'
@@ -30,7 +30,7 @@ ReactDOM.render((
   <Router
     history={browserHistory}
     render={applyRouterMiddleware(useScroll())}>
-    <Route component={App} path="/">
+    <Route component={AppContainer} path="/">
       <IndexRoute component={Start} />
       <Route component={About} path="/about" />
       <Route

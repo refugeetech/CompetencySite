@@ -1,11 +1,11 @@
 import React from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './Start.css'
-import Splash from '../../components/Splash/Splash'
+import SplashContainer from '../../components/Splash/SplashContainer'
 
 export const Start = () =>
   <div styleName="content">
-    <Splash />
+    <SplashContainer />
   </div>
 
 export default CSSModules(Start, styles)

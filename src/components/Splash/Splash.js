@@ -4,9 +4,9 @@ import marked from 'marked'
 import styles from './Splash.css'
 import Content from '../Content/Content'
 import ButtonLink from '../ButtonLink/ButtonLink'
-import LanguageStore from '../../stores/LanguageStore'
+import LanguageSelectorContainer from '../LanguageSelector/LanguageSelectorContainer'
 
-export const Splash = () =>
+export const Splash = ({ language, languages }) =>
   <div className="container">
     <Content
       backgroundImage="url(/static/images/bg2.jpg)"
@@ -15,19 +15,20 @@ export const Splash = () =>
       <div>
         <img src="/static/images/logo_flush.png" styleName="logo" />
       </div>
-      <h1 styleName="title">{LanguageStore.define('title')}</h1>
+      <h1 styleName="title">{languages[language].title}</h1>
       <div
         dangerouslySetInnerHTML={{
-          __html: marked(LanguageStore.define('intro'))
+          __html: marked(languages[language].intro)
         }}
         styleName="text" />
+      <LanguageSelectorContainer />
       <div styleName="buttoncontainer">
         <ButtonLink
           href="http://app.competency.se"
-          text={LanguageStore.define('buttonTellAboutYourself')} />
+          text={languages[language].buttonTellAboutYourself} />
         <ButtonLink
           href="http://bl.ocks.org/cggaurav/raw/12abf0d51111407a1ae7c8a89b1926c4"
-          text={LanguageStore.define('buttonEmployer')} />
+          text={languages[language].buttonEmployer} />
       </div>
     </Content>
   </div>

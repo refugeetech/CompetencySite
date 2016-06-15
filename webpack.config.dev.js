@@ -41,6 +41,7 @@ module.exports = {
     require('postcss-each'),
     require('postcss-for'),
     require('postcss-nested'),
+    require('postcss-short'),
     require('autoprefixer'),
     require('cssnano')({
       zindex: false

@@ -15,7 +15,7 @@ class LanguageStore {
      * State
      */
     this.language = 'sv'
-    this.defs = {
+    this.languages = {
       ar: ar,
       fa: fa,
       sv: sv,
@@ -28,7 +28,7 @@ class LanguageStore {
   }
 
   static define (def) {
-    const language = this.state.defs[this.state.language]
+    const language = this.state.languages[this.state.language]
 
     if (!language || !language[def]) {
       return ''
@@ -38,16 +38,22 @@ class LanguageStore {
   }
 
   static getLanguages () {
-    return Object.keys(this.state.defs)
+    return Object.keys(this.state.languages)
   }
 
   setLanguage (language) {
-    if (!this.defs[language]) {
+    if (!language) {
+      return false
+    }
+
+    const newLanguage = language.split('_')[1]
+
+    if (!this.languages[newLanguage]) {
       this.language = 'sv'
       return
     }
 
-    this.language = language
+    this.language = newLanguage
   }
 }
 

@@ -5,6 +5,103 @@
 @import "styles/colors";
 @import "styles/sizes";
 
+.overlay {
+  position: fixed 0 0 0 0;
+  z-index: 1;
+}
+
+.wrap {
+  margin-bottom: var(--spacing-third);
+  position: relative;
+  z-index: 2;
+}
+
+.choose {
+  flex: 1;
+  padding: var(--spacing-third) var(--spacing);
+  text-align: left;
+}
+
 .select {
-  color: var(--color-white);
+  align-items: center;
+  border: 2px solid var(--color-silver-chalice);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: background 100ms ease-in-out;
+  width: 100%;
+
+  i {
+    border-left: 3px solid var(--color-silver-chalice);
+    font-size: 14px;
+    padding: var(--spacing-half);
+  }
+}
+
+.active {
+  background: var(--color-white) !important;
+}
+
+.list {
+  border: 2px solid var(--color-silver-chalice);
+  border-top: 0;
+  box-sizing: border-box;
+  max-height: 200px;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  li {
+    background: var(--color-alabaster);
+    cursor: pointer;
+    padding: var(--spacing-half) calc(var(--spacing-half) * 2);
+
+    &:not(:last-child) {
+      border-bottom: 2px solid var(--color-silver-chalice);
+    }
+
+    &.selected,
+    &:focus,
+    &:hover {
+      background: var(--color-mischka);
+      outline: none;
+    }
+  }
+}
+
+.label {
+  font-weight: bold;
+}
+
+/* Languages
+-------------------------------------------------- */
+:global .language-ar,
+:global .language-fa {
+  :local .select i {
+    border-left: 0;
+    border-right: 3px solid var(--color-silver-chalice);
+  }
+}
+
+
+:global {
+  .fadeIn-enter {
+    opacity: 0.01;
+  }
+
+  .fadeIn-enter.fadeIn-enter-active {
+    opacity: 1;
+    transition: opacity 100ms ease-in;
+  }
+
+  .fadeIn-leave {
+    opacity: 1;
+  }
+
+  .fadeIn-leave.fadeIn-leave-active {
+    opacity: 0.01;
+    transition: opacity 100ms ease-in;
+  }
 }

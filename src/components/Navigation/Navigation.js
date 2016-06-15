@@ -19,10 +19,7 @@ export const Navigation = ({ right, white }) => {
       title: LanguageStore.define('treeMap'),
       to: 'visualization'
     }
-  ].concat(LanguageStore.getLanguages().map(key => ({
-    title: LanguageStore.define(`languageName_${key}`),
-    to: `/lang/${key}`
-  })))
+  ]
 
   const styleNames = classNames('navigation', {
     right: right,
