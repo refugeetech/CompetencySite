@@ -1,14 +1,14 @@
 {
   "aboutUs": "Om oss",
-  "buttonEmployer": "Jag är arbetsgivare (demo)",
-  "buttonTellAboutYourself": "Jag söker jobb",
-  "intro": "Vårt mål är att sysselsätta alla nyanlända med meningsfulla uppgifter genom att utgå ifrån deras kompetenser. Här är en enkel tjänst för att samla in nyanländas kompetenser.\n\nVi kommer visualisera detta och återkommer med resultat när vi fått 1000 personer att registrera sig. Sprid detta och be alla migranter registrera sin profil här nedan. Du kan även skicka länken http://app.competency.se som går direkt till registreringssidan som även finns översatt till flera språk.",
+  "buttonEmployer": "Visualisera",
+  "buttonTellAboutYourself": "Registrera",
+  "intro": "Vi vill visa bredden på kompetens hos alla nyanlända och asylsökande i Sverige idag. Syftet är att skapa fler arbetstillfällen som är anpassade till de förutsättningar som finns. Vi samarbetar även med andra intiativ som t ex JustArrived och LinkedIn för att öka hastigheten i processen. \n\nRegistrera din profil nedan. Om du är nyfiken på bredden i kompetens hittills kan du klicka på \"Visualisera\"",
   "languageName_ar": "Arabiska",
   "languageName_en": "English",
   "languageName_fa": "Persiska",
   "languageName_sv": "Svenska",
   "register": null,
   "registeredPeople": null,
-  "title": "Vi visar bredden av kompetenser hos migranter",
+  "title": "Nyanlända kan mer än du tror.",
   "treeMap": null
 }
