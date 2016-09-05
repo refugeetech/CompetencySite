@@ -16,8 +16,6 @@ class LanguageStore {
      */
     this.language = 'sv'
     this.defs = {
-      ar: ar,
-      fa: fa,
       sv: sv,
       en: en
     }
