@@ -28,8 +28,8 @@ describe('LanguageStore', () => {
   it('should set intial state', () => {
     expect(getState('language')).to.eql('sv')
 
-    expect(getState('defs').ar).to.be.an('object')
-    expect(getState('defs').fa).to.be.an('object')
+    //expect(getState('defs').ar).to.be.an('object')
+    //expect(getState('defs').fa).to.be.an('object')
     expect(getState('defs').en).to.be.an('object')
     expect(getState('defs').sv).to.be.an('object')
   })
@@ -62,7 +62,7 @@ describe('LanguageStore', () => {
     it('should return definition', () => {
       dispatch.send('set_language', 'en')
 
-      expect(LanguageStore.define('title')).to.eql('Let the jobs find you instead')
+      expect(LanguageStore.define('title')).to.eql('Newly arrived knows more than you think')
     })
   })
 })
