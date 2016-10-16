@@ -15,7 +15,7 @@ export class SignedUp extends Component {
   }
 
   componentDidMount () {
-    get('http://api.competency.se/users/count')
+    get('http://api.competency.nu/users/count')
       .then(data => this._setState(data))
   }
 

@@ -53,7 +53,7 @@ ReactDOM.render((
         path="/visualization/:query"/>
     </Route>
   </Route>
-    <Route onEnter={redirect.bind(this, 'http://app.competency.se')} path="register" />
+    <Route onEnter={redirect.bind(this, 'http://app.competency.nu')} path="register" />
     <Route component={NotFound} path="*" />
   </Router>
 ), document.getElementById('root'))
