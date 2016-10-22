@@ -23,7 +23,7 @@ export const Splash = () =>
         styleName="text" />
       <div styleName="buttoncontainer">
         <ButtonLink
-          href="http://app.competency.nu"
+          href="http://app.competency.se"
           text={LanguageStore.define('buttonTellAboutYourself')} />
         <ButtonLink
           href="/visualization"

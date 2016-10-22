@@ -74,7 +74,7 @@ describe('Splash', () => {
 
     expect(parent).to.have.prop('styleName', 'buttoncontainer')
 
-    expect(button).to.have.prop('href', 'http://app.competency.nu')
+    expect(button).to.have.prop('href', 'http://app.competency.se')
     expect(button).to.have.prop('text', 'buttonAbout')
   })
 
