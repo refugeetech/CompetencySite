@@ -21,14 +21,14 @@ export const Splash = () =>
           __html: marked(LanguageStore.define('intro'))
         }}
         styleName="text" />
-      <div styleName="buttoncontainer">
+      <!--<div styleName="buttoncontainer">
         <ButtonLink
           href="http://app.competency.se"
           text={LanguageStore.define('buttonTellAboutYourself')} />
         <ButtonLink
           href="/visualization"
           text={LanguageStore.define('buttonEmployer')} />
-      </div>
+      </div>-->
     </Content>
   </div>
 
